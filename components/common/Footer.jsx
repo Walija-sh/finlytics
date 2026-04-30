@@ -41,7 +41,7 @@ export default function Footer() {
           </p>
           </div>
 
-          <div className="w-[18.008917949241507%] lg:w-[10.561988349576712%]  h-auto absolute bottom-0 right-[10%]">
+          <div className="w-[18.008917949241507%] md:w-[10.561988349576712%] lg:max-w-[121px]  h-auto md:absolute bottom-0 right-[10%]">
             <LogoMark fill="#0c0054" className="w-full h-full " />
           </div>
         </div>
