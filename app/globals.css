@@ -1,26 +1,52 @@
 @import "tailwindcss";
 
+
+
+@font-face {
+  font-family: "HelveticaCustom";
+  src: url("./fonts/helvetica-w01-roman.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+   font-display: swap;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0c0054;
+  --foreground: #fff;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0c0054;
+    --foreground: #fff;
   }
 }
+@theme{
+    --color-background: #0c0054;
+    --color-foreground: #fff;
+    --color-primary: #0c0054;
+    --color-blue-2: #160770;
+    --color-blue-2-grad:#040019;
+    --color-blue-3: #1A6AFF;
+    --color-blue-bg:#e3eaf4;
+    --color-secondary: #ff914d;
 
+}
+ 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-foreground);
+
+  
+}
+
+
+.font-helvetica {
+  font-family: "HelveticaCustom", sans-serif;
 }
