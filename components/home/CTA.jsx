@@ -29,11 +29,11 @@ export default function CTA() {
         >
          <div className="flex flex-col items-center gap-5 text-center md:max-w-[73.046875%] mx-auto">
              {/* Heading */}
-          <h2 className="font-bold text-[16.2667px] md:text-[30px] lg:text-[40px] text-balance text-white ">
+          <h2 className="font-bold heading2v2 text-balance text-white ">
             Ready to ship decisions, not just dashboards?
           </h2>
           {/* Description */}
-          <p className="text-white text-[13.0133px] md:text-[18px] lg:text-[20px]">
+          <p className="text-white p3">
             Let's discuss your specific challenge. A 30-minute discovery call is the best way to
             determine if we are the right partner to help you.
           </p>

@@ -55,12 +55,12 @@ const opacity = useTransform(scrollYProgress, [0, 1], [0.2, 1]);
       </div>
 
       {/* Title */}
-      <h3 className=" font-bold text-[14.64px] md:text-[20px]">
+      <h3 className=" font-bold heading3">
         {item.label}
       </h3>
 
       {/* Body */}
-      <p className=" text-[13.0133px] md:text-[16px] lg:text-[18px] md:font-bold lg:font-normal">
+      <p className=" p2 md:font-bold lg:font-normal">
         {item.body}
       </p>
     </motion.div>
@@ -92,7 +92,7 @@ export default function Differences() {
             <div className="w-full  lg:sticky top-[110px] h-fit">
 
             <div className="w-fit flex flex-col gap-2">
-                <h2 className="w-fit relative font-bold text-[16.2667px] md:text-[25px] lg:text-[30px]"> What makes us different
+                <h2 className="w-fit relative font-bold heading2"> What makes us different
 
             </h2>
                 <motion.div

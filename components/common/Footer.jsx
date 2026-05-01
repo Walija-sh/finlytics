@@ -36,7 +36,7 @@ export default function Footer() {
           </div>
 
           {/* Copyright Text */}
-          <p className="text-white text-[13.0133px] md:text-[16px] lg:text-[18px]">
+          <p className="text-white p2">
             © {currentYear} Finlytics Hub. Where domain expertise meets deep technical knowledge.
           </p>
           </div>

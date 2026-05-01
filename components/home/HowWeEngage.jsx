@@ -72,14 +72,14 @@ function AccordionItem({ item, isOpen, onToggle, index }) {
         className="overflow-hidden"
       >
         <div ref={contentRef} className="pb-5  space-y-5">
-          <p className="text-[14px] md:text-[16px] lg:text-[18px] text-white">
+          <p className="p2 text-white">
             {item.description}
           </p>
           <div>
-            <h4 className=" text-[16px] lg:text-[18px]  text-secondary mb-1">
+            <h4 className=" p2  text-secondary mb-1">
               Deliverable
             </h4>
-            <p className="text-[13.0133px] md:text-[16px] lg:text-[18px] text-white">
+            <p className="p2 text-white">
               {item.deliverable}
             </p>
           </div>
@@ -138,7 +138,7 @@ export default function HowWeEngage() {
 
             <LogoMark className='w-full' fill='#ff914d'/>
             </div>
-            <h2 className="font-bold text-[16.2667px] md:text-[25px] lg:text-[30px]">
+            <h2 className="font-bold heading2">
               How we engage
             </h2>
             

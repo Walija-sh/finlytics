@@ -40,24 +40,24 @@ const smY = useTransform(scrollYProgress, [0, 1], ["-15rem", "8rem"]);
 
       <div className="relative z-10  mx-auto py-[10%] pl-[10%]">
         {/* top */}
-        <div className="mb-2 lg:mb-10 text-white text-[13.0133px] md:text-[16px] lg:text-[18px] md:max-w-[62%] pr-[10%]">
-              <h2 className=" font-bold text-[16.2667px] md:text-[25px] lg:text-[30px]  mb-2">
+        <div className="mb-2 lg:mb-10 text-white  md:max-w-[62%] pr-[10%]">
+              <h2 className=" font-bold heading2  mb-2">
                 The challenge you face
               </h2>
 
-              <p className="   mb-[18px]">
+              <p className="p2   mb-[18px]">
                 Enterprises are caught in a paradox: risk and compliance teams
                 demand bulletproof governance, while business and data teams
                 demand velocity.
               </p>
 
-              <p className=" font-bold  mb-[18px]">
+              <p className="p2 font-bold  mb-[18px]">
                 Traditional consultancies understand risk but can't build.
                 Technology vendors can build but don't understand your domain's
                 complexity.
               </p>
 
-              <p className="">
+              <p className="p2">
                 The result? Projects that never reach production, data platforms
                 nobody trusts, and millions spent on "digital transformation"
                 that doesn't transform the bottom line.
@@ -75,13 +75,13 @@ const smY = useTransform(scrollYProgress, [0, 1], ["-15rem", "8rem"]);
                     <Image src='/assets/finlytics-white.avif' alt='logomark' width={53} height={60} className="object-contain"/>
                   
                 </div>
-                <span className="font-bold text-[13px] md:text-[18px] lg:text-[20px] uppercase">
+                <h3 className="font-bold span2 uppercase">
                   We Bridge Both Worlds
-                </span>
+                </h3>
               </div>
 
               {/* Card body */}
-              <p className=" text-[13.0133px] md:text-[16px] lg:text-[18px]">
+              <p className=" p2">
                 <span className="font-bold">Finlytics Hub</span>{" "}
                 combines deep domain expertise in regulated &amp; data-intensive
                 industries with hands-on data engineering and AI/ML capabilities.

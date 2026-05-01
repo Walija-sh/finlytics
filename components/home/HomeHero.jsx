@@ -36,10 +36,11 @@ export default function HomeHero() {
 
       
       <div className="relative z-20 w-full  mx-auto p-[10%]">
-        <div className="max-w-2xl flex flex-col gap-6">
+        <div className=" max-w-[89.125%] md:max-w-[66.60974519247796%] lg:max-w-[56.57484266493056%] flex flex-col gap-6">
 
           {/* Headline */}
-          <h1 className="text-white font-extrabold leading-[1.1] tracking-tight text-[21.333px] md:text-[30px] lg:text-[40px] 2xl:text-[45px]">
+          
+          <h1 className="text-white font-extrabold leading-[1.1] tracking-tight  heading1">
             Transform Data Into Decisions
             <br />
             <span className="relative inline-block">
@@ -73,7 +74,7 @@ export default function HomeHero() {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-white text-[15.36px] md:text-[20px] lg:text-[24px] 2xl:text-[28.162px] max-w-[632px]">
+          <p className="text-white p1">
             Your bridge between risk expertise and modern data engineering
           </p>
 

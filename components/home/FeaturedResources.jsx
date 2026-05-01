@@ -44,10 +44,10 @@ function ResourceCard({ item, index }) {
       ref={ref}
       style={{ opacity }}
       className="rounded-[13px] border border-white bg-primary p-4 xl:p-6 xl:py-10 flex flex-col gap-2 transition-all duration-700 ease-out lg:grid lg:grid-rows-[auto_auto_auto] lg:gap-4 " >
-      <h3 className="font-bold text-[14.64px] md:text-[20px] text-white ">
+      <h3 className="font-bold heading3 text-white ">
         {item.title}
       </h3>
-      <p className="text-[12px] md:text-[16px] lg:text-[18px]">
+      <p className="p2">
         {item.description}
       </p>
       <Link
@@ -77,7 +77,7 @@ export default function FeaturedResources() {
 
       <div className="relative z-10 mx-auto p-[10%] ">
           {/* Header */}
-            <h2 className="font-bold text-[16.2667px] md:text-[25px] lg:text-[30px] text-white mb-2">
+            <h2 className="font-bold heading2 text-white mb-2">
               Featured Resources
             </h2>
          

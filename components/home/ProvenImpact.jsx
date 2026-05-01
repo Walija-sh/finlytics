@@ -21,7 +21,7 @@ function StatCard({ stat, label, description, className = "" }) {
       <p className="font-bold  text-[13px] md:text-[18px] uppercase leading-tight">
         {label}
       </p>
-      <p className=" text-[14px] md:text-[16px]  leading-relaxed">
+      <p className=" text-[14px] md:text-[16px] leading-tight">
         {description}
       </p>
     </ImpactCard>
@@ -30,7 +30,7 @@ function StatCard({ stat, label, description, className = "" }) {
 
 function IconCard({ icon: Icon, label, description, direction="col", className = "" }) {
   return (
-    <ImpactCard className={`flex-${direction} items-center ${direction === "col" ? " gap-2" : " gap-4 "}  ${className}`}>
+    <ImpactCard className={` items-center ${direction === "col" ? " gap-2 flex-col" : " gap-4 flex-row"}  ${className}`}>
       <div className={`flex-shrink-0   fill-primary stroke-primary mt-0.5 self-center ${direction === "col" ? " h-auto w-[30px] md:w-[45px] lg:w-[33px]" : " h-[29px] lg:h-[43px] w-auto"} `}>
         <Icon className="w-full h-full" />
       </div>
@@ -38,7 +38,7 @@ function IconCard({ icon: Icon, label, description, direction="col", className =
         <p className={` font-bold  text-[13px] ${direction==='col' ? 'md:text-[18px]' : ' md:text-[20px]'} uppercase leading-tight`}>
           {label}
         </p>
-        <p className="  text-[14px] md:text-[16px] leading-relaxed">
+        <p className="  text-[14px] md:text-[16px] leading-tight">
           {description}
         </p>
       </div>
@@ -48,7 +48,7 @@ function IconCard({ icon: Icon, label, description, direction="col", className =
 
 function SectionLabel({ children }) {
   return (
-    <p className="text-white  text-[18px] md:text-[20px] tracking-widest uppercase mb-4">
+    <p className="text-white  span1 tracking-widest uppercase mb-1">
       {children}
     </p>
   );
@@ -59,7 +59,7 @@ export default function ProvenImpact() {
     <section className="relative w-full bg-radial from-primary to-blue-2-grad overflow-hidden">
       
       <div className="relative z-10 p-[10%]">
-        <h2 className="text-white font-bold text-[16.2667px] md:text-[25px] lg:text-[30px] mb-2 md:mb-10">
+        <h2 className="text-white font-bold heading2 mb-2 md:mb-10">
           Proven Impact
         </h2>
 

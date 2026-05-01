@@ -59,10 +59,10 @@ function CapabilityCard({ item, index }) {
       <div className="w-[29px] md:w-[25px] h-auto text-secondary fill-secondary stroke-secondary">
         <item.Icon />
       </div>
-      <h3 className="font-bold text-[14.64px] md:text-[20px] text-white">
+      <h3 className="font-bold heading3 text-white">
         {item.title}
       </h3>
-      <p className="text-[13.0133px] md:text-[16px] lg:text-[18px] text-white">
+      <p className="p2 text-white">
         {item.description}
       </p>
       <Link
@@ -96,16 +96,16 @@ const rotate2 = useTransform(scrollYProgress, [0.1, 1], ['90deg', '360deg']);
 
       <div className="relative z-10 py-[10%] pl-[10%] md:pr-[10%] flex flex-col gap-5 lg:gap-10 lg:grid lg:grid-cols-2">
          {/* Header */}
-         <div className="flex flex-col gap-20 ">
+         <div className="flex flex-col gap-20  ">
 
-            <h2 className="font-bold text-[16.2667px] md:text-[25px] lg:text-[30px] text-white">
+            <h2 className="font-bold heading2 text-white">
               Our core capabilities
             </h2>
             {/* scroll linked circles */}
-            <div className="relative w-full h-full  hidden lg:inline-block">
-              <div className="lg:flex flex-col  w-[70%] xl:w-[280px]">
+            <div className="relative  h-full  hidden lg:inline-block grow-1 ">
+              <div className="lg:flex flex-col  w-[64%] relative ">
 
-                <motion.div style={{scale:scale1,rotate:rotate1}} className="self-start relative w-[112px] h-[112px] ">
+                <motion.div style={{scale:scale1,rotate:rotate1}} className="self-start relative  w-[36%] aspect-square">
       
       {/* Outer glow */}
       <div className="absolute inset-0 rounded-full bg-secondary/20"></div>
@@ -117,7 +117,7 @@ const rotate2 = useTransform(scrollYProgress, [0.1, 1], ['90deg', '360deg']);
       <div className="absolute right-0 top-[50%] translate-y-[-50%] w-[60%] aspect-square rounded-full bg-secondary/40"></div>
 
     </motion.div>
-                <motion.div style={{scale:scale2,rotate:rotate2}}  className="self-end relative w-[200px] h-[200px]">
+                <motion.div style={{scale:scale2,rotate:rotate2}}  className="self-start ml-[18%] relative   w-[60%] aspect-square">
       
       {/* Outer glow */}
       <div className="absolute inset-0 rounded-full bg-secondary/20"></div>
@@ -129,11 +129,11 @@ const rotate2 = useTransform(scrollYProgress, [0.1, 1], ['90deg', '360deg']);
       <div className="absolute right-0 top-[50%] translate-y-[-50%] w-[60%] aspect-square rounded-full bg-secondary/40"></div>
 
     </motion.div>
-              </div>
     {/* logo mark */}
-    <div className="w-[64.03395565373863%] absolute bottom-0 left-0 mb-[60px]">
+    <div className=" w-full absolute bottom-[-90%] left-0  ">
       <LogoMark fill='#0c0054'/>
     </div>
+              </div>
             </div>
         
           

@@ -31,7 +31,7 @@ function TrustedBadge({ text, index }) {
       className="group"
     >
       <div className="rounded-[13px] border border-white  px-6 py-3.5 md:px-8 md:py-4.5 lg:py-6 text-center ">
-        <span className="text-[13.0133px] md:text-[16px] lg:text-[18px] text-white uppercase">
+        <span className="p2 text-white uppercase">
           {text}
         </span>
       </div>
@@ -57,7 +57,7 @@ export default function TrustedByLeaders() {
     >
      
         {/* Header */}
-        <h2 className="font-bold text-[16.2667px] md:text-[25px] lg:text-[30px] text-white mb-3">
+        <h2 className="font-bold heading2 text-white mb-3">
             Trusted by leaders
           </h2>
 
@@ -69,7 +69,7 @@ export default function TrustedByLeaders() {
         </div>
 
         {/* Footer Text */}
-       <p className="text-[13.0133px] md:text-[16px] lg:text-[18px] text-white mt-5">Operating across the APAC, MENA, and Global markets with a remote-first delivery model and on-site support where it matters most.</p>
+       <p className="p2 text-white mt-5">Operating across the APAC, MENA, and Global markets with a remote-first delivery model and on-site support where it matters most.</p>
     </section>
   );
 }
