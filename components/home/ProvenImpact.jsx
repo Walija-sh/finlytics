@@ -5,7 +5,7 @@ import { EnterpriseWarehouseIcon, OnChainOffChainIcon, GenAIWorkflowsIcon, Event
 function ImpactCard({ children, className = "" }) {
   return (
     <div
-      className={`rounded-2xl h-full border text-primary bg-blue-bg  p-4 flex flex-col justify-center   ${className}`}
+      className={`rounded-2xl h-full border text-primary bg-blue-bg  p-4 flex flex-col justify-center   xl:min-h-[154px]   ${className}`}
     >
       {children}
     </div>
@@ -30,7 +30,7 @@ function StatCard({ stat, label, description, className = "" }) {
 
 function IconCard({ icon: Icon, label, description, direction="col", className = "" }) {
   return (
-    <ImpactCard className={` items-center ${direction === "col" ? " gap-2 flex-col" : " gap-4 flex-row"}  ${className}`}>
+    <ImpactCard className={` items-center ${direction === "col" ? " gap-2 flex-col" : " gap-4 flex-row"}  ${className} `}>
       <div className={`flex-shrink-0   fill-primary stroke-primary mt-0.5 self-center ${direction === "col" ? " h-auto w-[30px] md:w-[45px] lg:w-[33px]" : " h-[29px] lg:h-[43px] w-auto"} `}>
         <Icon className="w-full h-full" />
       </div>
@@ -48,7 +48,7 @@ function IconCard({ icon: Icon, label, description, direction="col", className =
 
 function SectionLabel({ children }) {
   return (
-    <p className="text-white  span1 tracking-widest uppercase mb-1">
+    <p className="text-white  span1 tracking-widest uppercase mb-1 xl:mb-6">
       {children}
     </p>
   );
@@ -59,12 +59,12 @@ export default function ProvenImpact() {
     <section className="relative w-full bg-radial from-primary to-blue-2-grad overflow-hidden">
       
       <div className="relative z-10 p-[10%]">
-        <h2 className="text-white font-bold heading2 mb-2 md:mb-10">
+        <h2 className="text-white font-bold heading2 mb-2 md:mb-10 xl:mb-12">
           Proven Impact
         </h2>
 
         {/*cards */}
-        <div className="flex flex-col lg:grid grid-cols-1  lg:grid-cols-2 lg:grid-row-[auto_1fr_1fr_1fr] gap-2 gap-x-5 ">
+        <div className="flex flex-col lg:grid grid-cols-1  lg:grid-cols-2 lg:grid-row-[auto_1fr_1fr_1fr] gap-2 gap-x-5 xl:gap-2.5 xl:gap-x-6.5 ">
 
             <SectionLabel className="col-span-1">For Risk &amp; Finance Leaders</SectionLabel>
 

@@ -84,19 +84,19 @@ export default function CoreCapabilities() {
      const sectref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: sectref,
-    offset: ["start 70%", "start -20%"],
+    offset: ["start 70%", "start -30%"],
   });
  const scale1 = useTransform(scrollYProgress, [0, 0.7], [1, 1.4]);
-const rotate1 = useTransform(scrollYProgress, [0, 0.7], ['0deg', '-360deg']);
- const scale2 = useTransform(scrollYProgress, [0.1, 1], [1, 1.5]);
-const rotate2 = useTransform(scrollYProgress, [0.1, 1], ['90deg', '360deg']);
+const rotate1 = useTransform(scrollYProgress, [0, 0.7], ['45deg', '-360deg']);
+ const scale2 = useTransform(scrollYProgress, [0.4, 1], [1, 1.5]);
+const rotate2 = useTransform(scrollYProgress, [0.4, 1], ['90deg', '360deg']);
   return (
     <section ref={sectref} className="relative w-full bg-primary overflow-hidden">
       
 
-      <div className="relative z-10 py-[10%] pl-[10%] md:pr-[10%] flex flex-col gap-5 lg:gap-10 lg:grid lg:grid-cols-2">
+      <div className="relative z-10 py-[10%] pl-[10%] md:pr-[10%] flex flex-col gap-5 lg:gap-10 lg:grid lg:grid-cols-2 xl:gap-[43px]">
          {/* Header */}
-         <div className="flex flex-col gap-20  ">
+         <div className="flex flex-col gap-20  xl:gap-28 ">
 
             <h2 className="font-bold heading2 text-white">
               Our core capabilities
@@ -105,7 +105,7 @@ const rotate2 = useTransform(scrollYProgress, [0.1, 1], ['90deg', '360deg']);
             <div className="relative  h-full  hidden lg:inline-block grow-1 ">
               <div className="lg:flex flex-col  w-[64%] relative ">
 
-                <motion.div style={{scale:scale1,rotate:rotate1}} className="self-start relative  w-[36%] aspect-square">
+                <motion.div style={{scale:scale1,rotate:rotate1}} className="self-start relative  w-[36%] aspect-square translate-x-[15%]">
       
       {/* Outer glow */}
       <div className="absolute inset-0 rounded-full bg-secondary/20"></div>
@@ -117,7 +117,7 @@ const rotate2 = useTransform(scrollYProgress, [0.1, 1], ['90deg', '360deg']);
       <div className="absolute right-0 top-[50%] translate-y-[-50%] w-[60%] aspect-square rounded-full bg-secondary/40"></div>
 
     </motion.div>
-                <motion.div style={{scale:scale2,rotate:rotate2}}  className="self-start ml-[18%] relative   w-[60%] aspect-square">
+                <motion.div style={{scale:scale2,rotate:rotate2}}  className="self-start ml-[20%] relative   w-[60%] aspect-square mt-[5%]">
       
       {/* Outer glow */}
       <div className="absolute inset-0 rounded-full bg-secondary/20"></div>
@@ -130,7 +130,7 @@ const rotate2 = useTransform(scrollYProgress, [0.1, 1], ['90deg', '360deg']);
 
     </motion.div>
     {/* logo mark */}
-    <div className=" w-full absolute bottom-[-90%] left-0  ">
+    <div className=" w-full absolute bottom-[-90%] xl:bottom-[-80%] left-0  ">
       <LogoMark fill='#0c0054'/>
     </div>
               </div>
@@ -140,7 +140,7 @@ const rotate2 = useTransform(scrollYProgress, [0.1, 1], ['90deg', '360deg']);
          </div>
 
           {/* Capabilities Cards */}
-          <div className="flex flex-col gap-6 md:gap-8">
+          <div className="flex flex-col gap-6 md:gap-8 xl:gap-11">
             {CAPABILITIES.map((item, i) => (
               <CapabilityCard key={item.id} item={item} index={i} />
             ))}

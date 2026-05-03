@@ -216,7 +216,70 @@ paragraph
   }
 }
 
+/* Up to 750px */
+@media screen and (max-width: 750px) {
+  .p4 {
+    font-size: max(0.5px, 0.0461538 * (100vw - 0px));
+  }
+}
 
+/* 751px - 1000px */
+@media screen and (min-width: 751px) and (max-width: 1000px) {
+  .p4 {
+    font-size: max(0.5px, 0.0260417 * (100vw - 0px));
+  }
+}
+
+/* 1001px - 1919px */
+@media screen and (min-width: 1001px) and (max-width: 1919px) {
+  .p4 {
+    font-size: max(0.5px, 0.0131096 * (100vw - 0px));
+  }
+}
+
+/* 1920px and above */
+@media screen and (min-width: 1920px) {
+  .p4 {
+    font-size: max(0.5px, 0.015625 * (100vw - 0px));
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .p5 {
+    font-size: max(0.5px, 0.0358974 * (100vw - 15px)) !important;
+  }
+}
+
+@media screen and (min-width: 751px) and (max-width: 1000px) {
+  .p5 {
+    font-size: max(0.5px, 0.0208333 * (100vw - 15px)) !important;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .p5 {
+    font-size: max(0.5px, 0.0140625 * (100vw - 15px)) !important;
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+  .p6 {
+    font-size: max(0.5px, 0.0307692 * (100vw - 15px)) !important;
+  }
+}
+
+@media screen and (min-width: 751px) and (max-width: 1000px) {
+  .p6 {
+    font-size: max(0.5px, 0.0182292 * (100vw - 15px)) !important;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .p6 {
+    font-size: max(0.5px, 0.0125 * (100vw - 15px)) !important;
+  }
+}
 /* 
 =============
 SPAN
@@ -265,4 +328,37 @@ SPAN
   .span2 {
     font-size: max(0.5px, 0.0158103 * (100vw - 0px));
   }
+}
+
+/* Up to 750px */
+@media screen and (max-width: 750px) {
+  .span3 {
+    font-size: max(0.5px, 0.0358974 * (100vw - 0px));
+  }
+}
+
+/* 751px - 1000px */
+@media screen and (min-width: 751px) and (max-width: 1000px) {
+  .span3 {
+    font-size: max(0.5px, 0.0208333 * (100vw - 0px));
+  }
+}
+
+/* 1001px - 1919px */
+@media screen and (min-width: 1001px) and (max-width: 1919px) {
+  .span3 {
+    font-size: max(0.5px, 0.0140625 * (100vw - 0px));
+  }
+}
+
+/* 1920px and above */
+@media screen and (min-width: 1920px) {
+  .span3 {
+    font-size: max(0.5px, 0.0093652 * (100vw - 0px));
+  }
+}
+
+
+.gap-bg{
+  background: radial-gradient(circle at 26.136067708333332% 21.608072916666668%, #0C0054 0%, 30.5%, rgba(12,0,84,0) 61%), radial-gradient(circle at 60.634765625% 100%, #0C0054 0%, 25%, rgba(12,0,84,0) 50%), radial-gradient(circle at 9.332682291666666% 77.97200520833333%, #1A6AFF 0%, 42%, rgba(26,106,255,0) 70%), radial-gradient(circle at 92.76204427083333% 14.70703125%, #160770 0%, 60%, rgba(22,7,112,0) 100%), radial-gradient(circle at 48.9013671875% 49.521484375%, #FFFFFF 0%, 100%, rgba(255,255,255,0) 100%);
 }

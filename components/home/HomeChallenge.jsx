@@ -40,12 +40,12 @@ const smY = useTransform(scrollYProgress, [0, 1], ["-15rem", "8rem"]);
 
       <div className="relative z-10  mx-auto py-[10%] pl-[10%]">
         {/* top */}
-        <div className="mb-2 lg:mb-10 text-white  md:max-w-[62%] pr-[10%]">
-              <h2 className=" font-bold heading2  mb-2">
+        <div className="mb-2 lg:mb-10 xl:mb-14 text-white  md:max-w-[62%] pr-[10%]">
+              <h2 className=" font-bold heading2  mb-2 xl:mb-[17px]">
                 The challenge you face
               </h2>
 
-              <p className="p2   mb-[18px]">
+              <p className="p2   mb-[18px] xl:mb-[27px]">
                 Enterprises are caught in a paradox: risk and compliance teams
                 demand bulletproof governance, while business and data teams
                 demand velocity.
@@ -65,11 +65,11 @@ const smY = useTransform(scrollYProgress, [0, 1], ["-15rem", "8rem"]);
             </div>
          {/* bottom card */}
          
-            <div className=" bg-black/30 backdrop-blur-[20px] p-[10px] md:p-[25px] lg:p-[26px] md:flex items-center md:justify-between rounded-tl-xl rounded-bl-xl md:gap-8">
-            <div className="w-full max-w-[86.74696787951483%] md:max-w-[72%] lg:max-w-[66.88368055555556%] ml-[12px] md:ml-[32px] lg:ml-[53px] text-white ">
+            <div className=" bg-black/30 backdrop-blur-[20px] p-[10px] md:p-[25px] lg:p-[26px] xl:py-[33px] md:flex items-center md:justify-between rounded-tl-xl rounded-bl-xl md:gap-8">
+            <div className="w-full max-w-[86.74696787951483%] md:max-w-[72%] lg:max-w-[66.88368055555556%] xl:max-w-[70%]  ml-[12px] md:ml-[32px] lg:ml-[53px] xl:ml-[63px] text-white ">
 
               {/* Card header */}
-              <div className="flex items-center mb-1.5">
+              <div className="flex items-center mb-1.5 xl:mb-[11px]">
                 {/* LogoMark badge */}
                 <div className="flex-shrink-0 w-10 md:w-[26px] lg:w-11 h-auto relative">
                     <Image src='/assets/finlytics-white.avif' alt='logomark' width={53} height={60} className="object-contain"/>

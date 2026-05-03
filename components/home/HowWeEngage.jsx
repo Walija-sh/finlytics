@@ -133,7 +133,7 @@ export default function HowWeEngage() {
       <div className="relative z-10 mx-auto p-[10%] ">
         <div className="max-w-[841px] ">
           {/* Header */}
-          <div className="mb-8 flex flex-col gap-1">
+          <div className="mb-8 xl:mb-11 flex flex-col gap-1">
             <div className="w-[24px] h-auto">
 
             <LogoMark className='w-full' fill='#ff914d'/>

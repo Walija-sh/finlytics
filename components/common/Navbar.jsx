@@ -46,7 +46,7 @@ useEffect(() => {
       {/* Top bar */}
       <div className={`fixed top-0 left-0 w-full  flex items-center justify-between px-[10%] min-h-[100px] md:min-h-[150px] py-1 z-50 ${isScrolled ? "bg-primary" : "bg-primary/0"} transition-all duration-150 ease-out`}>
                   {/* Logo */}
-          <Link href="/" className="inline-block w-[45%] relative md:max-w-[162px] lg:max-w-[138px] 2xl:max-w-[158px]  ">
+          <Link href="/" className="inline-block w-[45%] relative md:max-w-[162px] lg:max-w-[138px] xl:max-w-[158px]  ">
             
               <Image
                 src="/assets/Logo.png"
@@ -83,7 +83,7 @@ useEffect(() => {
       <AnimatePresence>
         {open && (
           <motion.aside
-            className="fixed top-0 right-0 w-[95%] max-w-[393px] lg:max-w-[409px] h-full z-60 p-5 lg:p-10 text-white flex flex-col border-l border-secondary bg-linear-to-r from-blue-2 to-blue-2-grad"
+            className="fixed top-0 right-0 w-[90%] max-w-[393px] lg:max-w-[409px] h-full z-60 p-5 lg:p-10 text-white flex flex-col border-l border-secondary bg-linear-to-r from-blue-2 to-blue-2-grad"
             variants={sidebarVariants}
             initial="hidden"
             animate="visible"
@@ -96,7 +96,7 @@ useEffect(() => {
               </button>
 
             {/* Links */}
-            <nav className="flex flex-col text-[16px] lg:text-[18px] gap-[14px] font-bold max-w-[287px] lg:font-normal">
+            <nav className="flex flex-col text-[16px] lg:text-[18px] xl:text-[20px] gap-[10px] font-bold  max-w-[287px] lg:font-normal">
               {navItems.map((item) => (
                 <div key={item.name} className="py-2">
                   {!item.dropdown ? (

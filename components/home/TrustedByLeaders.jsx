@@ -53,23 +53,23 @@ export default function TrustedByLeaders() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full bg-primary overflow-hidden  z-10  p-[10%] "
+      className="relative w-full bg-primary overflow-hidden  z-10  p-[10%] xl:pt-[5%] "
     >
      
         {/* Header */}
-        <h2 className="font-bold heading2 text-white mb-3">
+        <h2 className="font-bold heading2 text-white mb-3 xl:mb-12">
             Trusted by leaders
           </h2>
 
         {/* Categories Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 xl:gap-y-6.5 xl:gap-x-10">
           {TRUSTED_CATEGORIES.map((category, i) => (
             <TrustedBadge key={category} text={category} index={i} />
           ))}
         </div>
 
         {/* Footer Text */}
-       <p className="p2 text-white mt-5">Operating across the APAC, MENA, and Global markets with a remote-first delivery model and on-site support where it matters most.</p>
+       <p className="p2 text-white mt-5 xl:mt-12">Operating across the APAC, MENA, and Global markets with a remote-first delivery model and on-site support where it matters most.</p>
     </section>
   );
 }

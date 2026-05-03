@@ -2,35 +2,11 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
-import { HomeArrowSvg,DecisionIcon,PractitionerIcon,ProductionIcon,RiskIcon } from "@/components/common/Svg";
+import { HomeArrowSvg } from "@/components/common/Svg";
+import Image from "next/image";
 
 
-const DIFFERENTIATORS = [
-  {
-    id: "decision-first",
-    label: "Decision-first approach",
-    body: "We start with the commercial or risk decision you need to improve, then work backwards to the data, models, and infrastructure required. Not the other way around.",
-    Icon: DecisionIcon,
-  },
-  {
-    id: "practitioner",
-    label: "Practitioner's mindset",
-    body: "Our leadership has built and scaled national-level data programmes, shipped production machine learning models with industry-leading performance (Gini 0.85), and implemented robust data governance frameworks from the ground up.",
-    Icon: PractitionerIcon,
-  },
-  {
-    id: "production",
-    label: "Production-grade from day one",
-    body: "We build for reality. Our experience deploying event-sourced architectures for real-time decisions, enforcing 200+ data quality rules to maintain a 95.6% DQI, and delivering C-suite BI solutions informs every project we undertake.",
-    Icon: ProductionIcon,
-  },
-  {
-    id: "dna",
-    label: "Risk + engineering DNA",
-    body: "Our team is equally comfortable advising a board on risk strategy and in a terminal writing the dbt models, Python pipelines, and SQL queries to execute it.",
-    Icon: RiskIcon,
-  },
-];
+
 
 function DifferentiatorCard({ item, index }) {
  const ref = useRef(null);
@@ -46,12 +22,12 @@ const opacity = useTransform(scrollYProgress, [0, 1], [0.2, 1]);
       
       ref={ref}
   style={{ opacity }}
-      className="rounded-[13px] border border-white text-white  bg-primary/30 p-4 xl:p-10 flex flex-col gap-[1px] transition-all duration-700 ease-out"
+      className="rounded-[13px] border border-white text-white  bg-primary/30 p-4 lg:p-10 xl:py-11 xl:px-11.5 flex flex-col  transition-all duration-700 ease-out"
      
     >
       {/* Icon */}
-      <div className="w-[33px] md:w-[38px] lg:w-[35px] h-auto fill-white stroke-white mb-0.5 mb-1.5">
-        <item.Icon className="w-full h-auto" />
+      <div className="w-[33px] md:w-[38px] lg:w-[35px] h-auto fill-white stroke-white mb-0.5 mb-1.5 xl:mb-[12px] ">
+        <Image src={item.Icon} alt={item.label} width={35} height={35} className="w-full h-auto" />
       </div>
 
       {/* Title */}
@@ -68,7 +44,7 @@ const opacity = useTransform(scrollYProgress, [0, 1], [0.2, 1]);
 }
 
 
-export default function Differences() {
+export default function Differences({DIFFERENTIATORS}) {
   return (
     <section className="relative w-full bg-primary ">
       {/* bg*/}
@@ -89,9 +65,9 @@ export default function Differences() {
      
       <div className="relative z-10 p-[10%]">
         <div className=" flex flex-col gap-[15px] lg:grid lg:grid-cols-[40%_1fr]">
-            <div className="w-full  lg:sticky top-[110px] h-fit">
+            <div className="w-full  lg:sticky top-[85px] h-fit">
 
-            <div className="w-fit flex flex-col gap-2">
+            <div className="w-fit flex flex-col gap-2 xl:gap-[30px]">
                 <h2 className="w-fit relative font-bold heading2"> What makes us different
 
             </h2>
@@ -102,7 +78,7 @@ export default function Differences() {
     repeat: Infinity,
     ease: "easeInOut",
   }}
-                className="hidden lg:inline-block w-[100px] fill-secondary self-end ">
+                className="hidden lg:inline-block w-[100px] xl:w-[123px] scale-y-[-1] fill-secondary self-end ">
             <HomeArrowSvg/>
             </motion.div>
             </div>

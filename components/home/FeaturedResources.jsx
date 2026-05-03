@@ -43,11 +43,11 @@ function ResourceCard({ item, index }) {
     <motion.div
       ref={ref}
       style={{ opacity }}
-      className="rounded-[13px] border border-white bg-primary p-4 xl:p-6 xl:py-10 flex flex-col gap-2 transition-all duration-700 ease-out lg:grid lg:grid-rows-[auto_auto_auto] lg:gap-4 " >
-      <h3 className="font-bold heading3 text-white ">
+      className="rounded-[13px] border border-white bg-primary p-4 xl:p-5.5 xl:py-10.5 flex flex-col  transition-all duration-700 ease-out lg:grid lg:grid-rows-[auto_auto_auto]  " >
+      <h3 className="font-bold heading3 text-white mb-2 xl:mb-[19px]">
         {item.title}
       </h3>
-      <p className="p2">
+      <p className="p2 mb-4 xl:mb-12.5">
         {item.description}
       </p>
       <Link
@@ -75,15 +75,15 @@ export default function FeaturedResources() {
     >
      
 
-      <div className="relative z-10 mx-auto p-[10%] ">
+      <div className="relative z-10 mx-auto p-[10%] xl:pt-[5%] xl:pb-[2%] ">
           {/* Header */}
-            <h2 className="font-bold heading2 text-white mb-2">
+            <h2 className="font-bold heading2 text-white mb-2 xl:mb-12.5">
               Featured Resources
             </h2>
          
 
           {/* Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3  gap-4 md:gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3  gap-4 md:gap-6 xl:gap-11">
             {FEATURED_RESOURCES.map((item, i) => (
               <ResourceCard key={item.id} item={item} index={i} />
             ))}

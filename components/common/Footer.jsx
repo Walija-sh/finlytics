@@ -16,7 +16,7 @@ export default function Footer() {
          
 
             {/* Footer Links */}
-          <div className="flex flex-col gap-2 md:max-w-[62.500056743692824%]">
+          <div className="flex flex-col gap-2 md:max-w-[62.500056743692824%] ">
           <div className="flex flex-wrap items-center  text-[18px] text-white">
             <Link
               href="/privacy-policy"
