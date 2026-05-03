@@ -17,10 +17,11 @@ export default function Footer() {
 
             {/* Footer Links */}
           <div className="flex flex-col gap-2 md:max-w-[62.500056743692824%] ">
-          <div className="flex flex-wrap items-center  text-[18px] text-white">
+          <div className="flex flex-wrap items-center text-[18px]  text-white">
             <Link
               href="/privacy-policy"
-              className='p-2'
+              className='p-2 hover:text-secondary transition-colors duration-300'
+
               
             >
               Privacy Policy
@@ -28,7 +29,7 @@ export default function Footer() {
             <span >|</span>
             <Link
               href="/terms-of-service"
-              className='p-2'
+              className='p-2 hover:text-secondary transition-colors duration-300'
               
             >
               Terms of Service
