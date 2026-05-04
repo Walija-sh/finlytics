@@ -335,12 +335,24 @@ SPAN
   .span3 {
     font-size: max(0.5px, 0.0358974 * (100vw - 0px));
   }
+  .span4{
+    font-size: max(0.5px, 0.0410256 * (100vw - 17px));
+  }
+  .span5{
+    font-size: max(0.5px, 0.0358974  * (100vw - 17px));
+  }
 }
 
 /* 751px - 1000px */
 @media screen and (min-width: 751px) and (max-width: 1000px) {
   .span3 {
     font-size: max(0.5px, 0.0208333 * (100vw - 0px));
+  }
+   .span4{
+    font-size: max(0.5px, 0.0234375 * (100vw - 17px));
+  }
+    .span5{
+    font-size: max(0.5px, 0.0208333   * (100vw - 17px));
   }
 }
 
@@ -349,12 +361,24 @@ SPAN
   .span3 {
     font-size: max(0.5px, 0.0140625 * (100vw - 0px));
   }
+   .span4{
+    font-size: max(0.5px, 0.0140625  * (100vw - 17px));
+  }
+   .span5{
+    font-size: max(0.5px, 0.0125   * (100vw - 17px));
+  }
 }
 
 /* 1920px and above */
 @media screen and (min-width: 1920px) {
   .span3 {
     font-size: max(0.5px, 0.0093652 * (100vw - 0px));
+  }
+   .span4{
+    font-size: max(0.5px, 0.0104058  * (100vw - 17px));
+  }
+   .span5{
+    font-size: max(0.5px, 0.0093652  * (100vw - 17px));
   }
 }
 

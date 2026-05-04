@@ -14,7 +14,7 @@ const METHODOLOGY_STEPS = [
     title: "Discovery and roadmap",
     period: "(Weeks 1-2)",
     description: "We don't start with data or technology. We start with the decision you need to improve. We rapidly map your landscape, identify quick wins, and assess technical readiness. Deliverable: A 90-day roadmap with a week-by-week execution plan.",
-    image: "/assets/about/1.png",
+    image: "/assets/1.png",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const METHODOLOGY_STEPS = [
     title: "Proof of value",
     period: "(Weeks 3-10)",
     description: "We build the smallest thing that proves the concept and delivers tangible value, whether it's a challenger model for a specific segment, a governed pipeline for a critical dataset, or a single decisioning application that gets used immediately. Key principle: We ship working, production-ready code every week, not PowerPoint presentations.",
-    image: "/assets/about/2.png",
+    image: "/assets/2.png",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const METHODOLOGY_STEPS = [
     title: "Scale and sustain",
     period: "(Weeks 11+)",
     description: "We make it real with the critical, unglamorous work: monitoring, alerting, runbooks, documentation, and knowledge transfer. We then systematically expand the solution and help you build the internal capabilities to own and operate it.",
-    image: "/assets/about/3.png",
+    image: "/assets/3.png",
   },
 ];
 

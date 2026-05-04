@@ -110,7 +110,7 @@ useEffect(() => {
 
                       <Link href={item.href}
                         className="relative w-fit group"
-                       
+                       onClick={() => setOpen(false)}
                       >
                         <span className={`absolute w-full -bottom-[2px] left-0 h-[1px] bg-white  ${isActive(item.href) || isSolutionsActive  ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"} transition-transform duration-250 origin-left`}></span>
                         {item.name}
@@ -126,7 +126,7 @@ useEffect(() => {
                             animate={{ height: "auto", opacity: 1 }}
                             exit={{ height: 0, opacity: 0 }}
                           >
-                            <Link  href="/our-solutions/modern-data-platforms-governance" className="py-1 relative w-fit group" onClick={() => setOpen(false)}>
+                            <Link   href="/our-solutions/modern-data-platforms-governance" className="py-1 relative w-fit group" onClick={() => setOpen(false)}>
                               Modern Data Platforms & Governance
                               <span className="absolute w-full bottom-1 left-0 h-[1px] bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-250 origin-left"></span>
                             </Link>

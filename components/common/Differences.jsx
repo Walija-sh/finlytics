@@ -27,7 +27,7 @@ const opacity = useTransform(scrollYProgress, [0, 1], [0.2, 1]);
     >
       {/* Icon */}
       <div className="w-[33px] md:w-[38px] lg:w-[35px] h-auto fill-white stroke-white mb-0.5 mb-1.5 xl:mb-[12px] ">
-        <Image src={item.Icon} alt={item.label} width={35} height={35} className="w-full h-auto" />
+        <Image src={item.Icon} alt={item.label} width={35} height={35} className="w-full h-auto object-contain" />
       </div>
 
       {/* Title */}

@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useRef, useEffect } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "motion/react";
 
 export default function Hero({ 
   title = "About Finlytics Hub",
@@ -23,7 +23,7 @@ export default function Hero({
   return (
     <section 
       ref={sectionRef}
-      className={`relative min-h-[62vh] md:min-h-[491px] lg:min-h-[316px] xl:min-h-[446px] bg-primary overflow-hidden flex items-end p-[10%] md:py-[5%] ${className}`}
+      className={`relative  min-h-[392px] md:min-h-[491px] lg:min-h-[316px] xl:min-h-[446px] bg-primary overflow-hidden flex items-end p-[10%] md:py-[5%] ${className}`}
     >
     <div className="absolute inset-0 z-1 overflow-hidden">
         <motion.div
@@ -39,7 +39,7 @@ export default function Hero({
             priority
             className="object-cover object-center"
             sizes="100vw"
-            quality={90}
+           
           />
         </motion.div>
       </div>

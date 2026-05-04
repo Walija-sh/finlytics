@@ -13,20 +13,20 @@ import { BsArrowRightCircleFill } from "react-icons/bs";
 function SolutionCard({ item, index }) {
   return (
     <div className="group cursor-pointer md:p-[20px] md:rounded-[13px] md:border md:border-white lg:p-0 lg:rounded-none lg:border-0">
-      <div className="flex items-center justify-between xl:justify-center gap-[10px] border-b border-white p-2">
+      <Link href={item.link} className="flex items-center justify-between xl:justify-center gap-[10px] border-b border-white p-2">
         <span className="text-white text-[14px] md:text-[16px] font-medium">
           {item.title}
         </span>
-        <Link
-          href={item.link}
+        <div
+          
           className="inline-flex items-center gap-2 text-white transition-colors group-hover:gap-3"
         >
           <span className="rounded-full border border-secondary w-6 aspect-square flex items-center justify-center text-secondary relative overflow-hidden">
             <BsArrowRightShort className='text-[26px] -translate-y-[1px] -translate-x-[1px] group-hover:translate-x-full transition-all duration-300 group-hover:scale-50'/>
             <BsArrowRightCircleFill className='text-[26px] absolute inset-[-1px] text-secondary scale-0 group-hover:scale-100 transition-all origin-left duration-300'/>
           </span>
-        </Link>
-      </div>
+        </div>
+      </Link>
     </div>
   );
 }
@@ -41,6 +41,7 @@ export default function CTA({
       link: "/contact"
     }
   },
+  solutionHeader="Or explore our solutions:",
   solutions 
 }) {
   const scrollRef = useRef(null);
@@ -88,7 +89,7 @@ export default function CTA({
               className="mt-5 md:mt-10 lg:mt-[44px]"
             >
               <p className="text-white p2 mb-5 lg:mb-[15px] xl:mb-[30px] text-center">
-                Or explore our solutions:
+                {solutionHeader}
               </p>
               <motion.div style={{ opacity }} className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-10 xl:gap-[71px]">
                 {solutions.map((solution, i) => (

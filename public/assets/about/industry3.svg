@@ -1,7 +1,7 @@
-<svg preserveAspectRatio="xMidYMid meet" data-bbox="2 5.29 28 21.42" xmlns="http://www.w3.org/2000/svg"  viewBox="2 5.29 28 21.42" width="100%" height="auto" fill="#ff914d" data-type="shape" role="img" aria-label="Data &amp; Credit Infrastructure">
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" data-bbox="2 5.29 28 21.42" viewBox="2 5.29 28 21.42" width="100%" height="100%" fill="#ff914d" data-type="shape" role="img" aria-label="Data &amp; Credit Infrastructure">
     <g>
-        <path d="M27.35 5.29H9.23c-1.43 0-2.61 1.16-2.64 2.59h16.18c2.56 0 4.64 2.09 4.64 4.65v9.59A2.656 2.656 0 0 0 30 19.47V7.94c0-1.46-1.19-2.65-2.65-2.65"></path>
-        <path d="M22.77 9.88H4.65C3.19 9.88 2 11.07 2 12.53v1.88h23.41v-1.88c0-1.46-1.19-2.65-2.64-2.65"></path>
-        <path d="M2 24.06c0 1.46 1.19 2.65 2.65 2.65h18.12c1.45 0 2.64-1.19 2.64-2.65v-7.65H2zm15.91-3.35h3c.55 0 1 .44 1 1 0 .55-.45 1-1 1h-3c-.55 0-1-.45-1-1 0-.56.45-1 1-1"></path>
+        <path d="M27.35 5.29H9.23c-1.43 0-2.61 1.16-2.64 2.59h16.18c2.56 0 4.64 2.09 4.64 4.65v9.59A2.656 2.656 0 0 0 30 19.47V7.94c0-1.46-1.19-2.65-2.65-2.65"/>
+        <path d="M22.77 9.88H4.65C3.19 9.88 2 11.07 2 12.53v1.88h23.41v-1.88c0-1.46-1.19-2.65-2.64-2.65"/>
+        <path d="M2 24.06c0 1.46 1.19 2.65 2.65 2.65h18.12c1.45 0 2.64-1.19 2.64-2.65v-7.65H2zm15.91-3.35h3c.55 0 1 .44 1 1 0 .55-.45 1-1 1h-3c-.55 0-1-.45-1-1 0-.56.45-1 1-1"/>
     </g>
 </svg>
