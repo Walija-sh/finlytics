@@ -1,0 +1,7 @@
+<svg preserveAspectRatio="xMidYMid meet" data-bbox="20 20 160 160" xmlns="http://www.w3.org/2000/svg" viewBox="20 20 160 160" height="100%" width="100%" data-type="shape" role="presentation" aria-hidden="true" aria-label="" fill="#ff914d">
+    <g>
+        <path opacity=".2" d="M180 100c0 44.183-35.817 80-80 80s-80-35.817-80-80 35.817-80 80-80 80 35.817 80 80"></path>
+        <path opacity=".3" d="M179.999 100.755c0 35.43-28.721 64.151-64.151 64.151s-64.151-28.721-64.151-64.151 28.721-64.151 64.151-64.151 64.151 28.721 64.151 64.151"></path>
+        <path opacity=".4" d="M179.997 101.51c0 25.843-20.95 46.792-46.792 46.792s-46.792-20.95-46.792-46.792 20.95-46.792 46.792-46.792 46.792 20.95 46.792 46.792"></path>
+    </g>
+</svg>

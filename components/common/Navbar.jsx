@@ -20,7 +20,7 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Our Solutions", href: "/our-solutions", dropdown: true },
-    { name: "Technical Portfolio", href: "/portfolio" },
+    { name: "Technical Portfolio", href: "/technical-portfolio" },
     { name: "Insights", href: "/insights" },
     { name: "Contact Us", href: "/contact" },
   ];

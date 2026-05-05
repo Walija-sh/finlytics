@@ -50,6 +50,9 @@ body {
 .font-helvetica {
   font-family: "HelveticaCustom", sans-serif;
 }
+.font-arial{
+  font-family: 'Arial Black',Arial, Helvetica, sans-serif;
+}
 /* dynamic text sizes */
 
 :root {
@@ -149,6 +152,31 @@ Heading
   }
 }
 
+.heading4 {
+
+  font-size: max(0.5px, calc(0.048 * (100vw - 0px)));
+}
+
+/* Tablet (above 750px) */
+@media screen and (min-width: 751px) {
+  .heading4 {
+    font-size: max(0.5px, calc(0.0265604 * (100vw - 0px)));
+  }
+}
+
+/* Desktop (above 1000px) */
+@media screen and (min-width: 1001px) {
+  .heading4 {
+    font-size: max(0.5px, calc(0.0195313  * (100vw - 0px)));
+  }
+}
+
+/* Large Desktop (above 1920px) */
+@media screen and (min-width: 1921px) {
+  .heading4 {
+    font-size: max(0.5px, calc(0.0102102  * (100vw - 0px)));
+  }
+}
 /* ==============
 paragraph
 ============= */
@@ -280,6 +308,31 @@ paragraph
     font-size: max(0.5px, 0.0125 * (100vw - 15px)) !important;
   }
 }
+.p7 {
+
+  font-size: max(0.5px, calc(0.048 * (100vw - 17px)));
+}
+
+/* Tablet (above 750px) */
+@media screen and (min-width: 751px) {
+  .p7 {
+    font-size: max(0.5px, calc(0.0234375 * (100vw - 17px)));
+  }
+}
+
+/* Desktop (above 1000px) */
+@media screen and (min-width: 1001px) {
+  .p7 {
+    font-size: max(0.5px, calc(0.0158102 * (100vw - 17px)));
+  }
+}
+
+/* Large Desktop (above 1920px) */
+@media screen and (min-width: 1921px) {
+  .p7 {
+    font-size: max(0.5px, calc(0.0130073 * (100vw - 17px)));
+  }
+}
 /* 
 =============
 SPAN
@@ -339,7 +392,7 @@ SPAN
     font-size: max(0.5px, 0.0410256 * (100vw - 17px));
   }
   .span5{
-    font-size: max(0.5px, 0.0358974  * (100vw - 17px));
+    font-size: max(0.5px, 0.0358974  * (100vw - 0px));
   }
 }
 
@@ -352,7 +405,7 @@ SPAN
     font-size: max(0.5px, 0.0234375 * (100vw - 17px));
   }
     .span5{
-    font-size: max(0.5px, 0.0208333   * (100vw - 17px));
+    font-size: max(0.5px, 0.0208333   * (100vw - 0px));
   }
 }
 
@@ -365,7 +418,7 @@ SPAN
     font-size: max(0.5px, 0.0140625  * (100vw - 17px));
   }
    .span5{
-    font-size: max(0.5px, 0.0125   * (100vw - 17px));
+    font-size: max(0.5px, 0.0125   * (100vw - 0px));
   }
 }
 
@@ -378,11 +431,15 @@ SPAN
     font-size: max(0.5px, 0.0104058  * (100vw - 17px));
   }
    .span5{
-    font-size: max(0.5px, 0.0093652  * (100vw - 17px));
+    font-size: max(0.5px, 0.0093652  * (100vw - 0px));
   }
 }
 
 
 .gap-bg{
+  background: radial-gradient(circle at 26.136067708333332% 21.608072916666668%, #0C0054 0%, 30.5%, rgba(12,0,84,0) 61%), radial-gradient(circle at 60.634765625% 100%, #0C0054 0%, 25%, rgba(12,0,84,0) 50%), radial-gradient(circle at 9.332682291666666% 77.97200520833333%, #1A6AFF 0%, 42%, rgba(26,106,255,0) 70%), radial-gradient(circle at 92.76204427083333% 14.70703125%, #160770 0%, 60%, rgba(22,7,112,0) 100%), radial-gradient(circle at 48.9013671875% 49.521484375%, #FFFFFF 0%, 100%, rgba(255,255,255,0) 100%);
+}
+
+.caseStudy-bg{
   background: radial-gradient(circle at 26.136067708333332% 21.608072916666668%, #0C0054 0%, 30.5%, rgba(12,0,84,0) 61%), radial-gradient(circle at 60.634765625% 100%, #0C0054 0%, 25%, rgba(12,0,84,0) 50%), radial-gradient(circle at 9.332682291666666% 77.97200520833333%, #1A6AFF 0%, 42%, rgba(26,106,255,0) 70%), radial-gradient(circle at 92.76204427083333% 14.70703125%, #160770 0%, 60%, rgba(22,7,112,0) 100%), radial-gradient(circle at 48.9013671875% 49.521484375%, #FFFFFF 0%, 100%, rgba(255,255,255,0) 100%);
 }

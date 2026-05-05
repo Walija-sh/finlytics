@@ -4,6 +4,7 @@ import Solutions from '../../components/solution/Solutions'
 import OurApproach from '../../components/solution/OurApproach'
 import Differences from '../../components/common/Differences'
 import CTA from '../../components/common/CTA'
+import FixedBtnCta from '../../components/common/FixedBtnCta'
 const SOLUTION_DIFFERENTIATORS = [
   {
     id: "build-not-advise",
@@ -71,6 +72,7 @@ const page = () => {
     }
   ]}
 />
+<FixedBtnCta/>
     </div>
   )
 }

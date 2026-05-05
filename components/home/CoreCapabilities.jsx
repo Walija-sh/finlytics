@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import Link from 'next/link';
 import { CreditRiskIcon, DataPlatformsIcon,ProduceAIMLIcon } from '@/components/common/Svg';
-
+import Image from 'next/image'
 import { BsArrowRightCircleFill,BsArrowRightShort } from "react-icons/bs";
 import LogoMark from '../common/LogoMark';
 
@@ -86,55 +86,38 @@ export default function CoreCapabilities() {
     target: sectref,
     offset: ["start 70%", "start -30%"],
   });
- const scale1 = useTransform(scrollYProgress, [0, 0.7], [1, 1.4]);
-const rotate1 = useTransform(scrollYProgress, [0, 0.7], ['45deg', '-360deg']);
- const scale2 = useTransform(scrollYProgress, [0.4, 1], [1, 1.5]);
-const rotate2 = useTransform(scrollYProgress, [0.4, 1], ['90deg', '360deg']);
+
+  const scale1 = useTransform(scrollYProgress, [0, 0.7], [0.8, 1]);
+  const rotate1 = useTransform(scrollYProgress, [0, 0.7], ['45deg', '-360deg']);
+  const scale2 = useTransform(scrollYProgress, [0.4, 1], [0.8, 1]);
+  const rotate2 = useTransform(scrollYProgress, [0.4, 1], ['90deg', '360deg']);
   return (
     <section ref={sectref} className="relative w-full bg-primary overflow-hidden">
       
 
       <div className="relative z-10 py-[10%] pl-[10%] md:pr-[10%] flex flex-col gap-5 lg:gap-10 lg:grid lg:grid-cols-2 xl:gap-[43px]">
          {/* Header */}
-         <div className="flex flex-col gap-20  xl:gap-28 ">
+         <div className="flex flex-col gap-20  xl:gap-28 relative ">
 
             <h2 className="font-bold heading2 text-white">
               Our core capabilities
             </h2>
             {/* scroll linked circles */}
-            <div className="relative  h-full  hidden lg:inline-block grow-1 ">
-              <div className="lg:flex flex-col  w-[64%] relative ">
+         
+          <div className="absolute inset-0 z-2 h-full hidden lg:inline-block grow-1">
+              <motion.div style={{ scale: scale1, rotate: rotate1 }} className=" relative w-[36.54742017909568%] aspect-square mt-[calc(max(0.5px,0.1100264*(100vw-0px)))]  absolute top-0 right-0">
+                <Image src='/assets/RotatingCircles.svg' alt='circle' width={100} height={100} className='w-full h-full aspect-square'/>
+              </motion.div>
 
-                <motion.div style={{scale:scale1,rotate:rotate1}} className="self-start relative  w-[36%] aspect-square translate-x-[15%]">
-      
-      {/* Outer glow */}
-      <div className="absolute inset-0 rounded-full bg-secondary/20"></div>
-
-      {/* Mid layer */}
-      <div className="absolute right-0 top-[50%] translate-y-[-50%] w-[85%] aspect-square rounded-full bg-secondary/30"></div>
-
-      {/* Core */}
-      <div className="absolute right-0 top-[50%] translate-y-[-50%] w-[60%] aspect-square rounded-full bg-secondary/40"></div>
-
-    </motion.div>
-                <motion.div style={{scale:scale2,rotate:rotate2}}  className="self-start ml-[20%] relative   w-[60%] aspect-square mt-[5%]">
-      
-      {/* Outer glow */}
-      <div className="absolute inset-0 rounded-full bg-secondary/20"></div>
-
-      {/* Mid layer */}
-      <div className="absolute right-0 top-[50%] translate-y-[-50%] w-[85%] aspect-square rounded-full bg-secondary/30"></div>
-
-      {/* Core */}
-      <div className="absolute right-0 top-[50%] translate-y-[-50%] w-[60%] aspect-square rounded-full bg-secondary/40"></div>
-
-    </motion.div>
-    {/* logo mark */}
-    <div className=" w-full absolute bottom-[-90%] xl:bottom-[-80%] left-0  ">
-      <LogoMark fill='#0c0054'/>
-    </div>
+              <motion.div style={{ scale: scale2, rotate: rotate2 }} className="  absolute top-0 right-0 w-[64.09947054361706%] aspect-square mr-[calc(max(0.5px,0.1206003*(100vw-0px)))] mt-[calc(max(0.5px,0.2046244*(100vw-0px)))]">
+                 <Image src='/assets/RotatingCircles.svg' alt='circle' width={100} height={100} className='w-full h-full aspect-square'/>
+              </motion.div>
+              {/* logo mark */}
+              <div className="w-[64.03395565373863%] mb-[calc(max(0.5px,0.0283085 *(100vw-0px)))] absolute  left-0 bottom-0">
+                <LogoMark fill='#0c0054' />
               </div>
-            </div>
+            
+          </div>
         
           
          </div>
