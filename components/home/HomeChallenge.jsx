@@ -27,12 +27,12 @@ const smY = useTransform(scrollYProgress, [0, 1], ["-15rem", "8rem"]);
   return (
     <section ref={ref} className="relative w-full bg-linear-180 from-primary to-blue-3 overflow-hidden">
    {/* Illustration */}
-            <motion.div style={{ y:isDesktop ? lgY : smY }} className="absolute  w-full max-w-[30.074711892305125%] lg:max-w-[39.14601247257567%] aspect-[1.3380667663178873] bottom-[10%] right-0 flex items-center justify-end">
+            <motion.div style={{ y:isDesktop ? lgY : smY }} className="absolute  w-[30.074711892305125%] lg:w-[39.14601247257567%]  bottom-[10%] right-0 flex items-center justify-end">
               <Image
                 src="/assets/home/challenge-illustration.png"
                 alt="AI data engineering visualization"
                 
-                className="object-contain "
+                className="object-contain w-full h-auto "
                 width={542}
                 height={687}
               />

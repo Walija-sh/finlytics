@@ -113,25 +113,11 @@ export default function HowWeEngage() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full bg-linear-180 from-blue-3 to-primary overflow-hidden"
+      className="relative w-full bg-linear-180 from-blue-3 to-primary overflow-hidden p-[10%] lg:pr-0 lg:grid  lg:grid-cols-[1.3195121527777778fr_0.6804878472222222fr] lg:gap-[20px]"
     >
     
-      {/* Illustration */}
-                  <motion.div style={{ y }} className="absolute hidden lg:inline-block  w-full max-w-[163px]  aspect-[1.3380667663178873] top-[50%]
-                  translate-y-[-50%] right-0 flex items-center justify-end">
-                    <Image
-                      src="/assets/home/challenge-illustration.png"
-                      alt="AI data engineering visualization"
-                      
-                      className="object-contain "
-                      width={542}
-                      height={687}
-                    />
-                  </motion.div>
-     
-
-      <div className="relative z-10 mx-auto p-[10%] ">
-        <div className="max-w-[841px] ">
+      <div className="relative z-10 mx-auto  ">
+        <div className=" ">
           {/* Header */}
           <div className="mb-8 xl:mb-11 flex flex-col gap-1">
             <div className="w-[24px] h-auto">
@@ -145,7 +131,7 @@ export default function HowWeEngage() {
           </div>
 
           {/* Accordion */}
-          <div className="max-w-[841px] ">
+          <div className=" ">
             {ENGAGEMENT_STEPS.map((step, idx) => (
               <AccordionItem
                 key={step.id}
@@ -158,6 +144,20 @@ export default function HowWeEngage() {
           </div>
         </div>
       </div>
+      {/* Illustration */}
+                  <motion.div style={{ y }} className=" hidden lg:inline-block    w-full  
+                  ">
+                    <Image
+                      src="/assets/home/challenge-illustration.png"
+                      alt="AI data engineering visualization"
+                      
+                      className="object-contain w-[37.772265914306%] ml-auto "
+                      width={542}
+                      height={687}
+                    />
+                  </motion.div>
+     
+
     </section>
   );
 }
