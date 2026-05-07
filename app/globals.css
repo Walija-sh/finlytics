@@ -177,6 +177,32 @@ Heading
     font-size: max(0.5px, calc(0.0102102  * (100vw - 0px)));
   }
 }
+
+
+
+.heading5 {
+    font-size: max(0.5px, 0.0461538 * (100vw - 17px));
+}
+
+
+@media screen and (min-width: 751px) and (max-width: 1000px) {
+    .heading5 {
+        font-size: max(0.5px, 0.0332005 * (100vw - 17px));
+    }
+}
+
+
+@media screen and (min-width: 1001px) and (max-width: 1920px) {
+    .heading5 {
+        font-size: max(0.5px, 0.0237154 * (100vw - 17px));
+    }
+}
+
+@media screen and (min-width: 1921px) {
+    .heading5 {
+        font-size: max(0.5px, 0.0182102 * (100vw - 17px));
+    }
+}
 /* ==============
 paragraph
 ============= */

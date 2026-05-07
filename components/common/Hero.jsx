@@ -51,7 +51,7 @@ export default function Hero({
       />
       
       {/* Content */}
-      <div className="relative z-10 text-white w-full">
+      <div className="relative z-10 text-white w-full mr-[max(0.5px,0.1142041*(100vw-17px)))]">
         <h1 className="text-[max(0px,min(500px,max(0.5px,0.0641026*(100vw-17px))))] md:text-[max(0px,min(500px,max(0.5px,0.0398408*(100vw-17px))))] lg:text-[max(0px,min(500px,max(0.5px,0.0273438*(100vw-17px))))] font-bold uppercase leading-[1]">
           {title}
         </h1>

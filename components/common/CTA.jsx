@@ -14,7 +14,7 @@ function SolutionCard({ item, index }) {
   return (
     <div className="group cursor-pointer md:p-[20px] md:rounded-[13px] md:border md:border-white lg:p-0 lg:rounded-none lg:border-0">
       <Link href={item.link} className="flex items-center justify-between xl:justify-center gap-[10px] border-b border-white p-2">
-        <span className="text-white text-[14px] md:text-[16px] font-medium">
+        <span className="text-white text-[14px] md:text-[16px] font-medium lg:text-center">
           {item.title}
         </span>
         <div
@@ -91,7 +91,7 @@ export default function CTA({
               <p className="text-white p2 mb-5 lg:mb-[15px] xl:mb-[30px] text-center">
                 {solutionHeader}
               </p>
-              <motion.div style={{ opacity }} className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-10 xl:gap-[71px]">
+              <motion.div style={{ opacity }} className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-10 xl:gap-[71px] lg:items-end">
                 {solutions.map((solution, i) => (
                   <SolutionCard key={solution.id} item={solution} index={i} />
                 ))}

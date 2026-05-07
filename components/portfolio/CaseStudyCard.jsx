@@ -11,7 +11,7 @@ const CaseStudyCard = ({ data }) => {
   const swiperRef = useRef(null);
 
   return (
-    <div className="border border-white rounded-[13px] caseStudy-bg grid lg:grid-cols-[35%_5%_60%] lg:sticky top-0 lg:rounded-[5px]">
+    <div className="border border-white rounded-[13px] caseStudy-bg grid lg:grid-cols-[35%_5%_60%] lg:sticky top-[100px] lg:rounded-[5px]">
       {/* top */}
       <div className="
         pt-[calc(max(0.5px,_0.1025641_*_(100vw_-_17px)))]

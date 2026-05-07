@@ -46,7 +46,7 @@ useEffect(() => {
       {/* Top bar */}
       <div className={`fixed top-0 left-0 w-full  flex items-center justify-between px-[10%] min-h-[100px] md:min-h-[150px] py-1 z-50 ${isScrolled ? "bg-primary" : "bg-primary/0"} transition-all duration-150 ease-out`}>
                   {/* Logo */}
-          <Link href="/" className="inline-block w-[45%] relative md:max-w-[162px] lg:max-w-[138px] xl:max-w-[158px]  ">
+          <Link href="/" className="inline-block w-[49.42309692767683%] relative md:w-[26.52605993847243%] lg:w-[13.729529073242459%] focus:outline-none  ">
             
               <Image
                 src="/assets/Logo.png"
