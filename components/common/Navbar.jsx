@@ -22,7 +22,7 @@ export default function Navbar() {
     { name: "Our Solutions", href: "/our-solutions", dropdown: true },
     { name: "Technical Portfolio", href: "/technical-portfolio" },
     { name: "Insights", href: "/insights" },
-    { name: "Contact Us", href: "/contact" },
+    { name: "Contact Us", href: "/contact-us" },
   ];
 
   const sidebarVariants = {
@@ -35,7 +35,7 @@ const isSolutionsActive = pathname.startsWith("/our-solutions");
 
 useEffect(() => {
   const handleScroll = () => {
-    setIsScrolled(window.scrollY > 30); // threshold (tweak if needed)
+    setIsScrolled(window.scrollY > 30);
   };
 
   window.addEventListener("scroll", handleScroll);

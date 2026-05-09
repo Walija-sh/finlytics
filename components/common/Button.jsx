@@ -18,7 +18,7 @@ export default function Button({
   const variants = {
     primary:
       "bg-linear-90 from-secondary to-[#ff5015] hover:from-[#ff5015] hover:to-secondary  text-white border border-white py-2 px-10 min-w-[1.8em] lg:py-3",
-    
+    light:"bg-white transition-all duration-100 ease-in text-primary text-center text-[16px] hover:text-white hover:bg-secondary "
   };
 
  

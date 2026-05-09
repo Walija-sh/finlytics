@@ -5,7 +5,7 @@ import Button from "@/components/common/Button";
 
 export default function HomeHero() {
   return (
-    <section className="relative w-full min-h-[426px] md:min-h-[776px] lg:min-h-[668px] overflow-hidden bg-primary flex items-center">
+    <section className="relative w-full min-h-[426px] md:min-h-[776px] lg:min-h-[668px] 2xl:min-h-[1210px] overflow-hidden bg-primary flex items-center">
         {/* bg  */}
       <div className="fixed inset-0 z-0 opacity-[0.38]">
         <video
