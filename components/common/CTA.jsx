@@ -14,7 +14,7 @@ function SolutionCard({ item, index }) {
   return (
     <div className="group cursor-pointer md:p-[20px] md:rounded-[13px] md:border md:border-white lg:p-0 lg:rounded-none lg:border-0">
       <Link href={item.link} className="flex items-center justify-between xl:justify-center gap-[10px] border-b border-white p-2">
-        <span className="text-white text-[14px] md:text-[16px] font-medium lg:text-center">
+        <span className="text-white text-[14px] md:text-[16px] 2xl:text-[18px] font-medium lg:text-center">
           {item.title}
         </span>
         <div
@@ -65,7 +65,7 @@ export default function CTA({
     >
       <div className={`absolute inset-0 z-0 bg-primary ${overlayOpacity} pointer-events-none`} />
 
-      <div className="relative z-10 p-[10%]">
+      <div className="relative z-10 p-[10%] xl:pt-[5%]">
         <div className="border 2xl:border-2 border-white p-5 md:p-8 lg:p-10 xl:p-14.5 2xl:p-[107px] bg-primary/30 backdrop-blur-[20px] rounded-lg 2xl:rounded-[26px]">
           <div className="flex flex-col items-center text-center md:w-[73.046875%] mx-auto">
             {/* Heading */}
@@ -86,9 +86,9 @@ export default function CTA({
           {solutions && solutions.length > 0 && (
             <div 
                
-              className="mt-5 md:mt-10 lg:mt-[44px]"
+              className="mt-5 md:mt-10 lg:mt-[44px] 2xl:mt-[80px]"
             >
-              <p className="text-white p2 mb-5 lg:mb-[15px] xl:mb-[30px] text-center">
+              <p className="text-white p2 mb-5 lg:mb-[15px] xl:mb-[30px] 2xl:mb-[53px] text-center">
                 {solutionHeader}
               </p>
               <motion.div style={{ opacity }} className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-10 xl:gap-[71px] lg:items-end">

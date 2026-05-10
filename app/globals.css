@@ -310,6 +310,9 @@ body {
         font-size: max(0px, min(500px, max(0.5px, 0.0182101 * (100vw - 17px)))) !important;
         line-height: 1.3 !important;
     }
+        .hero-h {
+ font-size: max(0px, min(500px, max(0.5px, calc(0.0260146 * (100vw - 17px)))));
+}
      .p2 {
     font-size: max(0.5px, 0.0131096 * (100vw - 0px));
   }
@@ -323,12 +326,23 @@ body {
       .p4 {
     font-size: max(0.5px, 0.015625 * (100vw - 0px));
   }
+      .p5 {
+    font-size: max(0.5px, 0.0104058 * (100vw - 0px)) !important;
+  }
+      .p6 {
+    font-size: max(0.5px, 0.0104058 * (100vw - 0px)) !important;
+  }
+
+  
    .p7 {
     font-size: max(0.5px, calc(0.0130073 * (100vw - 17px)));
   }
     .p8 {
         font-size: max(0.5px, 0.0104877 * (100vw - 17px));
     }
+      .span1 {
+    font-size: max(0.5px, 0.0131096 * (100vw - 0px));
+  }
       .span2 {
     font-size: max(0.5px, 0.0131096 * (100vw - 0px));
   }

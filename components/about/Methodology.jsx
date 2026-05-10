@@ -75,14 +75,14 @@ function MethodologyStep({ item, index }) {
       
       {/* Step Content */}
         <div className="flex flex-col grow">
-          <h3 className="font-bold p5 ">
+          <h3 className="font-bold p5 2xl:text-[33.2987px]! ">
              {item.title}
           </h3>
           <span className="  p6">
             {item.period}
           </span>
         </div>
-        <p className=" p5 mb-2 md:mb-5 lg:mb-[30px] ">
+        <p className=" p5 mb-2 md:mb-5 lg:mb-[30px] 2xl:mb-[53px]">
           {item.description}
         </p>
       
@@ -102,10 +102,10 @@ function SolutionCard({ item, index }) {
     <motion.div
       ref={ref}
       style={{ opacity }}
-      className="  group cursor-pointer md:p-[20px] md:rounded-[13px] md:border md:border-white lg:p-0  lg:rounded-none lg:border-0"
+      className="  group cursor-pointer md:p-[20px] md:rounded-[13px] md:border md:border-white lg:p-0  lg:rounded-none lg:border-0 2xl:max-w-[455px]"
     >
-      <div className="flex items-center justify-between gap-[10px] border-b border-white p-2">
-        <span className="text-white text-[14px] md:text-[16px] font-medium">
+      <div className="flex items-center justify-between 2xl:justify-start gap-[10px] border-b border-white p-2">
+        <span className="text-white text-[14px] md:text-[16px] 2xl:text-[18px] font-medium">
         {item.title}
       </span>
       <Link

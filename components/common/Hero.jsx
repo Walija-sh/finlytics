@@ -51,11 +51,11 @@ export default function Hero({
       
       {/* Content */}
       <div className="relative z-10 text-white w-full mr-[max(0.5px,0.1142041*(100vw-17px)))]">
-        <h1 className="hero-h font-bold uppercase leading-[1]">
+        <h1 className="hero-h font-bold uppercase leading-[1] 2xl:mb-[26px]">
           {title}
         </h1>
         {showSubtitle && (
-          <p className="text-white text-[max(0.5px,0.048*(100vw-17px))] md:text-[max(0.5px,0.0265604*(100vw-17px))] lg:text-[max(0.5px,0.015625*(100vw-17px))]">
+          <p className="text-white text-[max(0.5px,0.048*(100vw-17px))] md:text-[max(0.5px,0.0265604*(100vw-17px))] lg:text-[max(0.5px,0.015625*(100vw-17px))] 2xl:text-[max(0.5px,0.0130073*(100vw-17px))]">
             {subtitle}
           </p>
         )}

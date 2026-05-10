@@ -79,22 +79,22 @@ export default function Leadership() {
 
   return (
     <section className="relative w-full bg-primary text-white  p-[10%] lg:py-[5%] overflow-hidden">
-      <div className="max-w-7xl mx-auto">
+      <div className=" mx-auto">
         
-        <div className="grid grid-cols-1  gap-4 lg:gap-12">
+        <div className="grid grid-cols-1  gap-4 lg:gap-12 2xl:gap-[53px]">
           
          
           <div className="text-white">
-            <h2 className="heading2 font-bold mb-3">
+            <h2 className="heading2 font-bold mb-3 2xl:mb-[53px]">
               Leadership &amp; expertise
             </h2>
-            <p className=" p4">
+            <p className=" heading3">
               Asad Mumtaz
             </p>
-            <p className="p2 text-secondary">
+            <p className="p2 text-secondary 2xl:mb-4">
               Founder &amp; Principal Consultant
             </p>
-            <p className=" p2 ">
+            <p className=" p2v2 ">
               A rare blend of financial domain expert and data leader who has operated at the
               intersection of risk, data, and technology for over 15 years.
             </p>

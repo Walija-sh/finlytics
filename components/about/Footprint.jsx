@@ -51,7 +51,7 @@ export default function OurFootprint() {
             </div>
             <div className="flex flex-col gap-[max(0.5px,0.0082918*(100vw-17px))]">
               <SectionLabel>Global Reach</SectionLabel>
-              <p className="text-[13.6553px] md:text-[18px] lg:text-[14.4px] xl:text-[20.25px] text-white">
+              <p className="p2v2 text-white">
                 We have successfully delivered projects globally through our remote-first model,
                 with on-site sprints for critical project phases
               </p>

@@ -44,21 +44,21 @@ function IndustryCard({ icon, title, desc }) {
   return (
     <Card className="flex flex-col ">
       
-      <div className="w-[14.393048811653463%]  mb-[10px] h-auto relative">
+      <div className="w-[14.393048811653463%] 2xl:w-[11.58161418747738%]  mb-[10px] h-auto relative">
         <Image
           src={icon}
           alt={title}
           width={30}
           height={30}
-          className="object-contain"
+          className="object-contain w-full h-auto"
         />
       </div>
 
-      <p className="font-bold text-[13.6553px] md:text-[18px] lg:text-[14.4px] xl:text-[20.25px] text-blue-2 mb-[10px]">
+      <p className="font-bold text-[13.6553px] md:text-[18px] lg:text-[14.4px] xl:text-[20.25px] 2xl:text-[24px] text-blue-2 mb-[10px]">
         {title}
       </p>
 
-      <p className="p6 text-black">
+      <p className="p6 2xl:text-[18px]! text-black">
         {desc}
       </p>
     </Card>
@@ -67,7 +67,7 @@ function IndustryCard({ icon, title, desc }) {
 function RoleCard({ title }) {
   return (
     <Card className=" flex items-center  text-blue-2 lg:px-[44px]">
-      <p className="font-semibold text-[13.6553px] md:text-[18px] lg:text-[14.4px] xl:text-[20.25px]">
+      <p className="font-semibold text-[13.6553px] md:text-[18px] lg:text-[14.4px] xl:text-[20.25px] 2xl:text-[24px]">
         {title}
       </p>
     </Card>
@@ -76,7 +76,7 @@ function RoleCard({ title }) {
 
 function SectionLabel({ children }) {
   return (
-    <p className="text-white span1 tracking-widest uppercase mb-4 lg:mb-[30px]">
+    <p className="text-white span1 tracking-widest uppercase mb-4 lg:mb-[30px] 2xl:mb-[53px]">
       {children}
     </p>
   );
@@ -85,7 +85,7 @@ function SectionLabel({ children }) {
 export default function WhoWeHelp() {
   return (
     <section className="relative w-full bg-radial from-primary to-blue-2-grad overflow-hidden">
-      <div className="p-[10%]">
+      <div className="p-[10%] 2xl:pb-[5%]">
         
         {/* Heading */}
         <h2 className="text-white heading2 font-bold lg:mb-[15px] lg:leading-[1] ">
@@ -99,7 +99,7 @@ export default function WhoWeHelp() {
         {/* INDUSTRIES */}
         <SectionLabel>Primary Industries</SectionLabel>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 mb-5 lg:mb-[30px] lg:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 mb-5 lg:mb-[30px] 2xl:mb-[53px] lg:gap-6">
           {primaryIndustries.map((item, i) => (
             <IndustryCard key={i} {...item} />
           ))}

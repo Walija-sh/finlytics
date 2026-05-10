@@ -30,13 +30,13 @@ export default function OriginStory() {
      
       <div
       
-        className=" flex items-center justify-end z-1 md:order-2 w-[42.408899593351215%] md:w-[83.3870072947138%] lg:w-[66.4645369652501%] md:mx-auto"
+        className=" flex items-center justify-end z-1 md:order-2 w-[42.408899593351215%] md:w-[83.3870072947138%] lg:w-[66.4645369652501%] 2xl:w-[49.88475300347843%] md:mx-auto"
       >
         <VideoLogo/>
       </div>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto text-white md:order-1 grid gap-2 md:gap-5 lg:gap-[22px]">
+      <div className="relative z-10 mx-auto text-white md:order-1 grid gap-2 md:gap-5 lg:gap-[20px]">
           {/* Heading */}
           <h2 className="font-bold heading2  leading-[1] ">
             Our origin story
@@ -50,7 +50,7 @@ export default function OriginStory() {
             </span>
           </p>
           {/* Paragraph 2 */}
-          <p className=" p2 ">
+          <p className=" p2v2 ">
             Our founding team has not only advised on but has actively built and
             scaled a national credit bureau from the ground up—processing
             millions of records weekly, achieving industry-leading Gini scores
@@ -58,7 +58,7 @@ export default function OriginStory() {
             frameworks.
           </p>
           {/* Paragraph 3 */}
-          <p className=" p2 ">
+          <p className=" p2v2 ">
             We have presented in boardrooms to regulators and debugged dbt
             models in terminals at 2 AM.
             <br />

@@ -48,7 +48,7 @@ export default function WhyClientsTrust() {
               {/* Title */}
               <p className="heading3 font-bold text-white">{item.title}</p>
               {/* Body */}
-              <p className="p2 text-white ">{item.body}</p>
+              <p className="p2v2 text-white 2xl:w-[84.86492149638185%] ">{item.body}</p>
             </div>
           ))}
         </div>

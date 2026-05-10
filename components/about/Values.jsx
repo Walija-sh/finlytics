@@ -62,13 +62,13 @@ useEffect(() => {
       className={`flex flex-col md:col-span-1 md:sticky top-[150px] ${item.className}`}
     >
       {/* Icon */}
-      <div className="w-[9.615384615384615%] md:w-[13.628039691665602%] h-auto  relative mb-1">
+      <div className="w-[9.615384615384615%] md:w-[13.628039691665602%] h-auto  relative mb-1 2xl:mb-3">
         <Image
           src={item.icon}
           alt={item.title}
           width={30}
           height={32}
-          className="object-contain"
+          className="object-contain w-full h-auto"
         />
       </div>
       
@@ -78,7 +78,7 @@ useEffect(() => {
       </h3>
       
       {/* Description */}
-      <p className="text-white p2">
+      <p className="text-white p2v2">
         {item.description}
       </p>
     </motion.div>
