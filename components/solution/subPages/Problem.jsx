@@ -39,7 +39,7 @@ const ProblemCard = ({
 }
 
 
-const Problem = ({title,subtitle,cards,AnimatedComponent = DataPlatformAnimatedImage,}) => {
+const Problem = ({title,subtitle,cards,AnimatedComponent}) => {
   return (
     <section className='bg-primary text-white'>
          <SubPageSectionHeader
@@ -50,7 +50,7 @@ const Problem = ({title,subtitle,cards,AnimatedComponent = DataPlatformAnimatedI
         {/* problems */}
 <div className="px-[10%] pb-[5%] pt-[2.5%] grid gap-[max(0.5px,0.051282*(100vw-17px))] md:gap-[max(0.5px,0.0416233*(100vw-17px))] md:grid-cols-[0.9999946670447428fr_1.0000053329552574fr] bg-linear-180 from-primary to-blue-3">
   {/* image */}
-  <AnimatedComponent />
+{AnimatedComponent || <DataPlatformAnimatedImage />}
   {/* cards */}
   <div className="grid gap-[max(0.5px,0.025641*(100vw-17px))] md:gap-[max(0.5px,0.0062503*(100vw-17px))]">
     {cards.map((card,index)=>(

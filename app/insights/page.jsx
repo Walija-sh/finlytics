@@ -7,7 +7,9 @@ import MachineLearning from '../../components/insights/MachineLearning'
 import CreditRisk from '../../components/insights/CreditRisk'
 import FixedBtnCta from '../../components/common/FixedBtnCta'
 import CTA from '../../components/common/CTA'
-
+export const metadata = {
+  title: 'Credit Risk & Data Governance Insights, Frameworks & Guides | Finlytics Hub',
+}
 const page = () => {
   return (
     <div className='relative'>

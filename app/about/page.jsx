@@ -43,6 +43,9 @@ const ABOUT_DIFFERENTIATORS = [
     Icon: '/assets/about/aboutDiff5.svg',
   },
 ];
+export const metadata = {
+  title: "About Finlytics Hub | Experts in Credit Risk & Data"
+}
 const page = () => {
   return (
     <div className='relative'>

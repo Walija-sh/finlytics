@@ -8,7 +8,9 @@ import Solution from '../../../components/solution/subPages/Solution'
 import WhatWeBuild from '../../../components/solution/subPages/WhatWeBuild'
 import Delivery from '../../../components/solution/subPages/Delivery'
 import Returns from '../../../components/solution/subPages/Returns'
-
+export const metadata = {
+  title: 'Modern Data Platforms & Governance | Finlytics Hub',
+}
 const page = () => {
   return (
     <main className='relative'>

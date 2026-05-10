@@ -4,7 +4,9 @@ import ContactCta from '../../components/contact/ContactCta'
 import WhereWeWork from '../../components/contact/WhereWeWork'
 import EngagementModels from '../../components/contact/EngagementModels'
 import Faqs from '../../components/contact/Faqs'
-
+export const metadata = {
+  title: 'Book a Free Discovery Call | Finlytics Hub',
+}
 const page = () => {
   return (
     <main className='relative'>

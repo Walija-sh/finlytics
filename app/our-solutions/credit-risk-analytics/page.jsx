@@ -1,4 +1,4 @@
-"use client"
+
 import React from 'react'
 import SubPageHero from '../../../components/solution/subPages/SubPageHero'
 import FixedBtnCta from '../../../components/common/FixedBtnCta'
@@ -10,7 +10,9 @@ import Solution from '../../../components/solution/subPages/Solution'
 import WhatWeBuild from '../../../components/solution/subPages/WhatWeBuild'
 import Delivery from '../../../components/solution/subPages/Delivery'
 import Returns from '../../../components/solution/subPages/Returns'
-
+export const metadata = {
+  title: 'Credit Risk & Financial Analytics Solutions | Finlytics Hub',
+}
 const page = () => {
   return (
     <main className='relative'>
@@ -29,7 +31,7 @@ title={
   }
   subtitle='In the high-stakes world of lending and finance, legacy approaches to risk management create significant challenges.'
   cards={creditRiskProblem}
-  AnimatedComponent={CreditRiskAnimatedImage}
+  AnimatedComponent={<CreditRiskAnimatedImage/>}
 />
 <Solution
 title='Specialised expertise for mission-critical risk functions'

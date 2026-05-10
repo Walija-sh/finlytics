@@ -1,4 +1,4 @@
-"use client"
+
 import React from 'react'
 import SubPageHero from '../../../components/solution/subPages/SubPageHero'
 import FixedBtnCta from '../../../components/common/FixedBtnCta'
@@ -10,7 +10,9 @@ import Solution from '../../../components/solution/subPages/Solution'
 import WhatWeBuild from '../../../components/solution/subPages/WhatWeBuild'
 import Delivery from '../../../components/solution/subPages/Delivery'
 import Returns from '../../../components/solution/subPages/Returns'
-
+export const metadata = {
+  title: 'Data Science & Machine Learning Solutions | Finlytics Hub',
+}
 const page = () => {
   return (
     <main className='relative'>
@@ -29,7 +31,7 @@ title={
   }
   subtitle='Many businesses invest heavily in data science but fail to see a return. Promising models developed in notebooks often never make it into production, a phenomenon known as the "model graveyard."'
   cards={dataScienceAndMlProblem}
-  AnimatedComponent={DsAndMlAnimatedImage}
+  AnimatedComponent={<DsAndMlAnimatedImage/>}
 />
 <Solution
 title='Production-grade AI, governed and scaled'

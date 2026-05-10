@@ -5,7 +5,9 @@ import TechnicalStack from '../../components/portfolio/TechnicalStack'
 import FixedBtnCta from '../../components/common/FixedBtnCta'
 import CTA from '../../components/common/CTA'
 import SectionHeader from '../../components/common/SectionHeader'
-
+export const metadata = {
+  title: 'Case Studies: Credit Risk, Data Warehouses & ML | Finlytics Hub',
+}
 const page = () => {
   return (
     <div className='relative'>
