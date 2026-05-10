@@ -5,7 +5,7 @@ import { EnterpriseWarehouseIcon, OnChainOffChainIcon, GenAIWorkflowsIcon, Event
 function ImpactCard({ children, className = "" }) {
   return (
     <div
-      className={`rounded-2xl h-full border text-primary bg-blue-bg  p-4 flex flex-col justify-center   xl:min-h-[154px]   ${className}`}
+      className={`rounded-2xl h-full border text-primary bg-blue-bg  p-4 flex flex-col justify-center   xl:min-h-[154px]  xl:p-[22px] 2xl:p-10  ${className}`}
     >
       {children}
     </div>
@@ -15,10 +15,10 @@ function ImpactCard({ children, className = "" }) {
 function StatCard({ stat, label, description, className = "" }) {
   return (
     <ImpactCard className={className}>
-      <p className=" font-extrabold font-[arial] text-[25px] leading-none tracking-tight text-blue-2">
+      <p className=" font-extrabold font-[arial] text-[25px] 2xl:text-[30px] leading-none tracking-tight text-blue-2">
         {stat}
       </p>
-      <p className="font-bold  text-[13px] md:text-[18px] uppercase leading-tight">
+      <p className="font-bold  text-[13px] md:text-[18px] 2xl:text-[20px] uppercase leading-tight">
         {label}
       </p>
       <p className=" text-[14px] md:text-[16px] leading-tight">
@@ -30,12 +30,12 @@ function StatCard({ stat, label, description, className = "" }) {
 
 function IconCard({ icon: Icon, label, description, direction="col", className = "" }) {
   return (
-    <ImpactCard className={` items-center ${direction === "col" ? " gap-2 flex-col" : " gap-4 flex-row"}  ${className} `}>
-      <div className={`flex-shrink-0   fill-primary stroke-primary mt-0.5 self-center ${direction === "col" ? " h-auto w-[30px] md:w-[45px] lg:w-[33px]" : " h-[29px] lg:h-[43px] w-auto"} `}>
+    <ImpactCard className={` items-center ${direction === "col" ? " gap-2 flex-col" : " gap-4  2xl:gap-[36px] flex-row"}  ${className} `}>
+      <div className={`flex-shrink-0   fill-primary stroke-primary mt-0.5 self-center ${direction === "col" ? " h-auto w-[30px] md:w-[45px] lg:w-[33px] 2xl:w-[67px]" : " h-[29px] lg:h-[43px] 2xl:h-[85px] w-auto"} `}>
         <Icon className="w-full h-full" />
       </div>
       <div className="flex flex-col gap-2">
-        <p className={` font-bold  text-[13px] ${direction==='col' ? 'md:text-[18px]' : ' md:text-[20px]'} uppercase leading-tight`}>
+        <p className={` font-bold  text-[13px] 2xl:text-[20px] ${direction==='col' ? 'md:text-[18px]' : ' md:text-[20px]'} uppercase leading-tight`}>
           {label}
         </p>
         <p className="  text-[14px] md:text-[16px] leading-tight">
@@ -48,7 +48,7 @@ function IconCard({ icon: Icon, label, description, direction="col", className =
 
 function SectionLabel({ children }) {
   return (
-    <p className="text-white  span1 tracking-widest uppercase mb-1 xl:mb-6">
+    <p className="text-white  span1 tracking-tight uppercase mb-1 xl:mb-6">
       {children}
     </p>
   );
@@ -59,7 +59,7 @@ export default function ProvenImpact() {
     <section className="relative w-full bg-radial from-primary to-blue-2-grad overflow-hidden">
       
       <div className="relative z-10 p-[10%]">
-        <h2 className="text-white font-bold heading2 mb-2 md:mb-10 xl:mb-12">
+        <h2 className="text-white font-bold heading2 mb-2 md:mb-10 xl:mb-12 2xl:mb-18">
           Proven Impact
         </h2>
 

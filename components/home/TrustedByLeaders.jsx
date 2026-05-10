@@ -30,7 +30,7 @@ function TrustedBadge({ text, index }) {
       
       className="group"
     >
-      <div className="rounded-[13px] border border-white  px-6 py-3.5 md:px-8 md:py-4.5 lg:py-6 text-center ">
+      <div className="rounded-[13px] border border-white  px-6 py-3.5 md:px-8 md:py-4.5 lg:py-6 2xl:py-11.5 text-center ">
         <span className="p2 text-white uppercase">
           {text}
         </span>
@@ -62,7 +62,7 @@ export default function TrustedByLeaders() {
           </h2>
 
         {/* Categories Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 xl:gap-y-6.5 xl:gap-x-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 xl:gap-y-6.5 xl:gap-x-10 2xl:gap-x-[80px] 2xl:gap-y-[40px]">
           {TRUSTED_CATEGORIES.map((category, i) => (
             <TrustedBadge key={category} text={category} index={i} />
           ))}

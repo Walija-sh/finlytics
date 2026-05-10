@@ -56,18 +56,18 @@ function CapabilityCard({ item, index }) {
       style={{ opacity }}
       className=" border-b border-white pr-[10%] md:pr-0  flex flex-col gap-3 transition-all duration-700 ease-out"
     >
-      <div className="w-[29px] md:w-[25px] h-auto text-secondary fill-secondary stroke-secondary">
+      <div className="w-[29px] md:w-[25px] 2xl:mb-[26px] 2xl:w-[6.354860948423824%] h-auto text-secondary fill-secondary stroke-secondary">
         <item.Icon />
       </div>
       <h3 className="font-bold heading3 text-white">
         {item.title}
       </h3>
-      <p className="p2 text-white">
+      <p className="p2v2 text-white">
         {item.description}
       </p>
       <Link
         href={item.buttonLink}
-        className="inline-flex items-center gap-2 text-[14px] md:text-[16px] font-medium text-white/90 hover:text-white transition-colors group w-fit p-2"
+        className="inline-flex items-center gap-2 text-[14px] md:text-[16px] 2xl:text-[18px] font-medium text-white/90 hover:text-white transition-colors group w-fit p-2"
       >
         <span>{item.buttonText}</span>
         <span className='inline-block rounded-full border border-secondary w-6 aspect-square flex items-center justify-center text-secondary relative overflow-hidden'>
@@ -84,25 +84,25 @@ export default function CoreCapabilities() {
      const sectref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: sectref,
-    offset: ["start 70%", "start -30%"],
+    offset: ["start 70%", "start 0%"],
   });
 
   const scale1 = useTransform(scrollYProgress, [0, 0.7], [0.8, 1]);
-  const rotate1 = useTransform(scrollYProgress, [0, 0.7], ['45deg', '-360deg']);
-  const scale2 = useTransform(scrollYProgress, [0.4, 1], [0.8, 1]);
-  const rotate2 = useTransform(scrollYProgress, [0.4, 1], ['90deg', '360deg']);
+  const rotate1 = useTransform(scrollYProgress, [0, 0.7], ['0deg', '-360deg']);
+  const scale2 = useTransform(scrollYProgress, [0.1, 1], [0.8, 1]);
+  const rotate2 = useTransform(scrollYProgress, [0.1, 1], ['90deg', '360deg']);
   return (
-    <section ref={sectref} className="relative w-full bg-primary overflow-hidden">
+    <section ref={sectref} className="relative w-full bg-primary overflow-clip">
       
 
       <div className="relative z-10 py-[10%] pl-[10%] md:pr-[10%] flex flex-col gap-5 lg:gap-10 lg:grid lg:grid-cols-2 xl:gap-[43px]">
          {/* Header */}
          <div className="flex flex-col gap-20  xl:gap-28 relative ">
 
-            <h2 className="font-bold heading2 text-white">
+            <h2 className="font-bold lg:sticky lg:top-[250px] relative z-10 heading2 text-white">
               Our core capabilities
             </h2>
-            {/* scroll linked circles */}
+            
          
           <div className="absolute inset-0 z-2 h-full hidden lg:inline-block grow-1">
               <motion.div style={{ scale: scale1, rotate: rotate1 }} className=" relative w-[36.54742017909568%] aspect-square mt-[calc(max(0.5px,0.1100264*(100vw-0px)))]  absolute top-0 right-0">
@@ -123,7 +123,7 @@ export default function CoreCapabilities() {
          </div>
 
           {/* Capabilities Cards */}
-          <div className="flex flex-col gap-6 md:gap-8 xl:gap-11">
+          <div className="flex flex-col gap-6 md:gap-8 xl:gap-11 2xl:gap-13">
             {CAPABILITIES.map((item, i) => (
               <CapabilityCard key={item.id} item={item} index={i} />
             ))}

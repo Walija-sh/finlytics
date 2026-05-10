@@ -35,19 +35,19 @@ export default function HomeHero() {
       </div>
 
       
-      <div className="relative z-20 w-full  mx-auto p-[10%]">
-        <div className=" max-w-[89.125%] md:max-w-[66.60974519247796%] lg:max-w-[56.57484266493056%] flex flex-col ">
+      <div className="relative z-20 w-full  mx-auto p-[10%] lg:pt-[5%]">
+        <div className=" max-w-[89.125%] md:max-w-[66.60974519247796%] lg:max-w-[56.57484266493056%] flex flex-col lg:mt-[max(0.5px,0.0948242*(100vw-0px))]">
 
           {/* Headline */}
           
-          <h1 className="text-white font-extrabold leading-[1.1] tracking-tight  heading1 mb-4 lg:mb-7">
+          <h1 className="text-white font-extrabold leading-[1.1] tracking-tight  heading1 mb-4 lg:mb-7 2xl:mb-[38px]">
             Transform Data Into Decisions
             <br />
             <span className="relative inline-block">
               That Drive 
               <span className="relative "> Revenue
 
-  <span className="absolute left-0 -bottom-2">
+  <span className="absolute left-0 -bottom-2 2xl:-bottom-4">
     <motion.div
       initial={{ width: 0 }}
       animate={{ width: "fit-content" }}
@@ -61,7 +61,7 @@ export default function HomeHero() {
 
                 <svg
 
-                className=" block  w-auto max-w-[83px] md:max-w-[136px] lg:max-w-[154px] xl:max-w-[211px] h-auto " preserveAspectRatio="xMidYMid meet" data-bbox="0 0.001 182.575 10.187" xmlns="http://www.w3.org/2000/svg" viewBox="0 0.001 182.575 10.187" height="100%" width="211" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
+                className=" block w-auto   max-w-[83px] md:max-w-[136px] lg:max-w-[154px] xl:max-w-[211px] 2xl:max-w-[385px] h-auto " preserveAspectRatio="xMidYMid meet" data-bbox="0 0.001 182.575 10.187" xmlns="http://www.w3.org/2000/svg" viewBox="0 0.001 182.575 10.187" height="100%" width="385" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
     <g>
         <path d="M36.49.974a1.5 1.5 0 0 1-.877 1.93c-.814.306-1.49.582-2.045.828h96.749c4.196 0 8.428-.055 12.676-.11 10.386-.134 20.878-.27 31.233.39 1.359.086 2.836.342 4.117.677 1.219.318 2.473.76 3.238 1.314.203.148.45.357.647.642.203.294.415.766.326 1.348-.089.58-.431.97-.72 1.198a3 3 0 0 1-.877.461c-1.052.367-2.882.536-5.582.536-21.429 0-42.86-.865-64.265-1.728l-.04-.001c-21.428-.864-42.83-1.727-64.235-1.727-.632 0-1.658.034-2.898.075-2.98.099-7.196.238-10.136.046-.46-.03-.91-.07-1.335-.12H1.5a1.5 1.5 0 1 1 0-3h27.369c.116-.399.343-.711.53-.92.31-.346.721-.645 1.159-.91.887-.54 2.208-1.134 4.002-1.807a1.5 1.5 0 0 1 1.93.878m106.146 5.654c10.919.335 21.831.56 32.739.56l.264-.001a18 18 0 0 0-1.603-.181c-10.235-.652-20.543-.519-30.881-.385z" clipRule="evenodd" fillRule="evenodd" fill="#ff914d"></path>
     </g>
@@ -74,7 +74,7 @@ export default function HomeHero() {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-white p1 mb-5 lg:mb-11 leading-tight">
+          <p className="text-white p1 mb-5 lg:mb-11 leading-tight 2xl:w-[90.19805089723458%] 2xl:mb-[max(0.5px,0.03125*(100vw-0px))]">
             Your bridge between risk expertise and modern data engineering
           </p>
 

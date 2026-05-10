@@ -58,7 +58,7 @@ function AccordionItem({ item, isOpen, onToggle, index }) {
         className="w-full flex justify-between cursor-pointer items-center py-2 text-left group"
         aria-expanded={isOpen}
       >
-        <h3 className=" text-[18px] md:text-[20px] lg:text-[25px] text-white group-hover:text-secondary transition-colors">
+        <h3 className=" text-[18px] md:text-[20px] lg:text-[25px] 2xl:text-[35px] text-white group-hover:text-secondary transition-colors">
           {item.title}
         </h3>
         <div className={`w-8 h-8 flex items-center justify-center rounded-full transition-colors `}>
@@ -71,15 +71,15 @@ function AccordionItem({ item, isOpen, onToggle, index }) {
         transition={{ duration: 0.3, ease: 'easeInOut' }}
         className="overflow-hidden"
       >
-        <div ref={contentRef} className="pb-5  space-y-5">
-          <p className="p2 text-white">
+        <div ref={contentRef} className="pb-5 2xl:py-10  space-y-5">
+          <p className="p2v2 text-white">
             {item.description}
           </p>
           <div>
-            <h4 className=" p2  text-secondary mb-1">
+            <h4 className=" p2v2  text-secondary mb-1">
               Deliverable
             </h4>
-            <p className="p2 text-white">
+            <p className="p2v2 text-white">
               {item.deliverable}
             </p>
           </div>
@@ -113,14 +113,14 @@ export default function HowWeEngage() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full bg-linear-180 from-blue-3 to-primary overflow-hidden p-[10%] lg:pr-0 lg:grid  lg:grid-cols-[1.3195121527777778fr_0.6804878472222222fr] lg:gap-[20px]"
+      className="relative w-full bg-linear-180 from-blue-3 to-primary overflow-hidden p-[10%] lg:py-[5%] lg:pr-0 lg:grid  lg:grid-cols-[1.3195121527777778fr_0.6804878472222222fr] lg:gap-[20px]"
     >
     
       <div className="relative z-10 mx-auto  ">
         <div className=" ">
           {/* Header */}
           <div className="mb-8 xl:mb-11 flex flex-col gap-1">
-            <div className="w-[24px] h-auto">
+            <div className="w-[24px] 2xl:w-[28px] 2xl:mb-[24px] h-auto">
 
             <LogoMark className='w-full' fill='#ff914d'/>
             </div>

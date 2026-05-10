@@ -22,11 +22,11 @@ const opacity = useTransform(scrollYProgress, [0, 1], [0.2, 1]);
       
       ref={ref}
   style={{ opacity }}
-      className="rounded-[13px] border border-white text-white  bg-primary/30 p-4 lg:p-10 xl:py-11 xl:px-11.5 flex flex-col  transition-all duration-700 ease-out"
+      className="rounded-[13px] border border-white text-white  bg-primary/30 p-4 lg:p-10 xl:py-11 xl:px-11.5 2xl:p-[80px] flex flex-col  transition-all duration-700 ease-out"
      
     >
       {/* Icon */}
-      <div className="w-[33px] md:w-[38px] lg:w-[35px] h-auto fill-white stroke-white mb-0.5 mb-1.5 xl:mb-[12px] ">
+      <div className="w-[33px] md:w-[38px] lg:w-[35px] xl:w-[6.793374089542603%] h-auto fill-white stroke-white mb-0.5 mb-1.5 xl:mb-[12px] ">
         <Image src={item.Icon} alt={item.label} width={35} height={35} className="w-full h-auto object-contain" />
       </div>
 
@@ -36,7 +36,7 @@ const opacity = useTransform(scrollYProgress, [0, 1], [0.2, 1]);
       </h3>
 
       {/* Body */}
-      <p className=" p2 md:font-bold lg:font-normal">
+      <p className=" p2v2 md:font-bold lg:font-normal">
         {item.body}
       </p>
     </motion.div>
