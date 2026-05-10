@@ -1,0 +1,20 @@
+<svg preserveAspectRatio="xMidYMid meet" data-bbox="20 20 160 160" viewBox="20 20 160 160" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img" aria-label="Self-Service Analytics That Works"><defs><style>#comp-miiwr0d0 svg [data-color="1"] {fill: #0C0054;}
+#comp-miiwr0d0 svg [data-color="2"] {fill: #FF914D;}</style></defs>
+    <g>
+        <path d="M54.286 20h91.429C164.65 20 180 35.35 180 54.286v91.429C180 164.65 164.65 180 145.714 180H54.286C35.35 180 20 164.65 20 145.714V54.286C20 35.35 35.35 20 54.286 20z" fill="#0C0054" data-color="1"></path>
+        <path d="M86.475 65.714h21.333a2.667 2.667 0 1 1 0 5.334H86.475a2.668 2.668 0 0 1 0-5.334z" fill-opacity=".3" fill="#FF914D" data-color="2"></path>
+        <path d="M118.476 65.714h21.333a2.667 2.667 0 1 1 0 5.334h-21.333a2.667 2.667 0 1 1 0-5.334z" fill="#FF914D" data-color="2"></path>
+        <path d="M102.476 113.714h10.667a2.667 2.667 0 1 1 0 5.334h-10.667a2.667 2.667 0 1 1 0-5.334z" fill-opacity=".3" fill="#FF914D" data-color="2"></path>
+        <path d="M123.809 113.714h16a2.667 2.667 0 1 1 0 5.334h-16a2.668 2.668 0 0 1 0-5.334z" fill="#FF914D" data-color="2"></path>
+        <path d="M59.81 65.714h16a2.667 2.667 0 1 1 0 5.334h-16a2.667 2.667 0 1 1 0-5.334z" fill="#FF914D" data-color="2"></path>
+        <path d="M107.809 81.714h10.667a2.667 2.667 0 1 1 0 5.334h-10.667a2.667 2.667 0 1 1 0-5.334z" fill-opacity=".3" fill="#FF914D" data-color="2"></path>
+        <path d="M129.143 81.714h10.667a2.667 2.667 0 1 1 0 5.334h-10.667a2.667 2.667 0 1 1 0-5.334z" fill="#FF914D" data-color="2"></path>
+        <path d="M59.81 81.714h37.333a2.667 2.667 0 1 1 0 5.334H59.81a2.667 2.667 0 1 1 0-5.334z" fill="#FF914D" data-color="2"></path>
+        <path d="M97.142 97.714h10.667a2.667 2.667 0 1 1 0 5.334H97.142a2.667 2.667 0 1 1 0-5.334z" fill-opacity=".3" fill="#FF914D" data-color="2"></path>
+        <path d="M118.476 97.714h21.333a2.667 2.667 0 1 1 0 5.334h-21.333a2.667 2.667 0 1 1 0-5.334z" fill="#FF914D" data-color="2"></path>
+        <path d="M59.81 97.714h26.667a2.667 2.667 0 1 1 0 5.334H59.81a2.667 2.667 0 1 1 0-5.334z" fill="#FF914D" data-color="2"></path>
+        <path d="M59.81 129.714h13.333a2.667 2.667 0 1 1 0 5.334H59.81a2.667 2.667 0 1 1 0-5.334z" fill="#FF914D" data-color="2"></path>
+        <path d="M83.809 129.714h26.667a2.667 2.667 0 1 1 0 5.334H83.809a2.668 2.668 0 0 1 0-5.334z" fill-opacity=".3" fill="#FF914D" data-color="2"></path>
+        <path d="M59.81 113.714h32a2.667 2.667 0 1 1 0 5.334h-32a2.667 2.667 0 1 1 0-5.334z" fill="#FF914D" data-color="2"></path>
+    </g>
+</svg>

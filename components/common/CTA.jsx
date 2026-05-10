@@ -67,9 +67,9 @@ export default function CTA({
 
       <div className="relative z-10 p-[10%]">
         <div className="border border-white p-5 md:p-8 lg:p-10 xl:p-14.5 bg-primary/30 backdrop-blur-[20px] rounded-lg">
-          <div className="flex flex-col items-center text-center md:max-w-[73.046875%] mx-auto">
+          <div className="flex flex-col items-center text-center md:w-[73.046875%] mx-auto">
             {/* Heading */}
-            <h2 className="font-bold heading2v2 text-balance md:leading-[1]  text-white mb-2.5 text-balance">
+            <h2 className="font-bold heading2v2  md:leading-[1]  text-white mb-2.5 ">
               {content.heading}
             </h2>
             {/* Description */}
@@ -77,12 +77,12 @@ export default function CTA({
               {content.description}
             </p>
             {/* Button */}
-            <Button href={content.button.link} variant="primary">
+            <Button href={content.button.link} variant="primary" className=' leading-[1]'>
               {content.button.text}
             </Button>
           </div>
           
-          {/* optional solution links - check if solutions exists AND has length */}
+          {/* optional solution links */}
           {solutions && solutions.length > 0 && (
             <div 
                

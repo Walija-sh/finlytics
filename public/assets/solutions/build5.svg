@@ -1,0 +1,8 @@
+<svg preserveAspectRatio="xMidYMid meet" data-bbox="20 20 160 160" viewBox="20 20 160 160" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img" aria-label="Embedded Data Governance"><defs><style>#comp-miiwr0d415 svg [data-color="1"] {fill: #0C0054;}
+#comp-miiwr0d415 svg [data-color="2"] {fill: #FF914D;}</style></defs>
+    <g>
+        <path d="M54.286 20h91.429C164.65 20 180 35.35 180 54.286v91.429C180 164.65 164.65 180 145.714 180H54.286C35.35 180 20 164.65 20 145.714V54.286C20 35.35 35.35 20 54.286 20z" fill="#0C0054" data-color="1"></path>
+        <path d="M74.286 80c0-9.468 7.675-17.143 17.143-17.143h22.857c12.624 0 22.857 10.233 22.857 22.857v11.429H91.429c-9.468 0-17.143-7.675-17.143-17.143z" fill="#FF914D" data-color="2"></path>
+        <path d="M125.714 120c0-9.468-7.675-17.143-17.143-17.143H85.714c-12.624 0-22.857 10.233-22.857 22.857v11.429h45.714c9.468 0 17.143-7.675 17.143-17.143z" fill="#FF914D" opacity=".3" data-color="2"></path>
+    </g>
+</svg>

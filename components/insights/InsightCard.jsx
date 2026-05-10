@@ -20,7 +20,6 @@ const InsightCard = ({
   const opacity = useTransform(scrollYProgress, [0, 1], [0, 1])
   const iconWidth = optionalIconWidth || 'w-[14.393048811653463%]'
 
-  // Define variant styles
   const variantStyles = {
     default: {
       container: "rounded-[13px] p-5 md:p-10 bg-blue-bg flex-1 min-w-[250px] lg:min-w-[185px]",

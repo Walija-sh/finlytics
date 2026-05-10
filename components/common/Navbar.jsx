@@ -121,7 +121,7 @@ useEffect(() => {
                       <AnimatePresence>
                         {solutionsOpen && (
                           <motion.div
-                            className="mt-3 flex flex-col gap-3 text-[15px] font-normal"
+                            className="mt-3 flex flex-col gap-3 text-[15px] lg:text-[16px] font-normal"
                             initial={{ height: 0, opacity: 0 }}
                             animate={{ height: "auto", opacity: 1 }}
                             exit={{ height: 0, opacity: 0 }}
