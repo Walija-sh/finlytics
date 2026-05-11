@@ -101,7 +101,7 @@ const handlePrev = () => {
             {data.slides.map((slide, slideIndex) => (
               <SwiperSlide key={slideIndex}>
                 {slide.type === 'challenge' && (
-                  <div className="grid lg:grid-cols-2 lg:gap-5 xl:gap-[60px] lg:items-start">
+                  <div className="flex  h-full flex-col lg:grid lg:grid-cols-2 lg:gap-5 xl:gap-[60px] lg:items-start">
                     <div className="">
                       <h3 className='mb-2 lg:mb-[11px] heading3  font-bold uppercase'>{slide.title}</h3>
                       <p className='mb-[15px] p3'>{slide.description}</p>
@@ -111,7 +111,7 @@ const handlePrev = () => {
                       alt='' 
                       width={744} 
                       height={393} 
-                      className='object-cover rounded-[13px] w-full h-auto aspect-[1.1257275902211874] md:aspect-[2/1] lg:aspect-[1.1/1]'
+                      className='object-cover rounded-[13px] w-full h-full md:h-auto grow-1  md:aspect-[2/1] lg:aspect-[1.1/1] '
                     />
                   </div>
                 )}
