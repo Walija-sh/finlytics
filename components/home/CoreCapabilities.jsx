@@ -99,7 +99,7 @@ export default function CoreCapabilities() {
          {/* Header */}
          <div className="flex flex-col gap-20  xl:gap-28 relative ">
 
-            <h2 className="font-bold lg:sticky lg:top-[250px] relative z-10 heading2 text-white">
+            <h2 className="font-bold lg:sticky lg:top-[160px] relative z-10 heading2 text-white">
               Our core capabilities
             </h2>
             

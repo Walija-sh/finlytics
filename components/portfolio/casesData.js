@@ -208,7 +208,7 @@
   caseStudies: [
     {
       id: 1,
-      icon: '/assets/technicalPortfolio/blockchain.svg',
+      icon: '/assets/technicalPortfolio/blockChain.svg',
       iconAlt: 'Blockchain Credit',
       title: 'Blockchain Credit Scoring',
       subtitle: 'Bridging DeFi and TradFi',

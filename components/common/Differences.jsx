@@ -65,7 +65,7 @@ export default function Differences({DIFFERENTIATORS}) {
      
       <div className="relative z-10 p-[10%]">
         <div className=" flex flex-col gap-[15px] lg:grid lg:grid-cols-[40%_1fr]">
-            <div className="w-full  lg:sticky lg:top-[160px]  2xl:top-[10%] h-fit">
+            <div className="w-full  lg:sticky lg:top-[160px]  h-fit">
 
             <div className="w-fit flex flex-col gap-2 xl:gap-[30px]">
                 <h2 className="w-fit relative font-bold heading2"> What makes us different
