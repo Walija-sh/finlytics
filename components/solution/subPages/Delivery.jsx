@@ -82,7 +82,7 @@ const toggleCard = (index) => {
             {step.title}
           </span>
              <span className="font-bold">
-            {step.weeks}
+            ({step.weeks})
           </span>
         <div  className={`text-[16px] ${
     !expandedCards[index] ? 'line-clamp-3' : ''
@@ -133,10 +133,10 @@ const toggleCard = (index) => {
         key={step.number}
         style={{ opacity: index === 0 ? 1 : cardProgresses[index] }}
         transition={{ duration: 0.5 }}
-        className="text-white font-bold span3"
+        className="text-white font-bold flex flex-wrap span3 md:w-[87.51936429192052%]"
       >
-        {step.title} <br />
-        {step.weeks}
+        <span>{step.title} </span>
+        <span>({step.weeks}) </span> 
       </motion.h3>
     ))}
   </div>

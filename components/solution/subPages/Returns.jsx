@@ -94,7 +94,7 @@ const Returns = ({title='',accordianData}) => {
       
     >
         <Link href='/' className='inline-block w-[49.42309692767684%] md:w-[26.52605993847243%] lg:w-[62.73116617311336%] animate-slow-scale'>
-        <Image alt='logo' src='/assets/logo.png' width={200} height={100} className="object-contain w-full h-auto"/></Link>
+        <Image alt='logo' src='/assets/Logo.png' width={200} height={100} className="object-contain w-full h-auto"/></Link>
 
       
     </div>
@@ -118,12 +118,12 @@ const Returns = ({title='',accordianData}) => {
            <div className="">
              <h2 className='mb-[15px] md:mb-[20px] lg:mb-[max(0.5px,0.0104058*(100vw-17px))] p4 text-secondary font-bold'>
 Download Our Strategic Guide</h2>
-            <p className='mb-[max(0.5px,0.0512821*(100vw-17px))] md:mb-[max(0.5px,0.0260417*(100vw-17px))] lg:mb-[max(0.5px,0.0104058*(100vw-17px))] p2'>
+            <p className='mb-[max(0.5px,0.0512821*(100vw-17px))] md:mb-[max(0.5px,0.0260417*(100vw-17px))] lg:mb-[max(0.5px,0.0104058*(100vw-17px))] p2v2'>
           For a deeper look into our methodology, download our comprehensive guide to Modern Data Platform Transformation.
             </p>
            </div>
             <Link href='#' className="flex items-center justify-between md:justify-start gap-[10px] border-b border-white p-2 w-full max-w-[365px] group">
-        <span className="text-white text-[14px] md:text-[16px] font-medium lg:text-center">
+        <span className="text-white text-[14px] md:text-[16px] 2xl:text-[18px] font-medium lg:text-center">
        Download the Strategic Guide (PDF)
         </span>
         <div

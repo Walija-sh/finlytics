@@ -11,7 +11,7 @@ const FEATURED_RESOURCES = [
     title: 'From zero to bureau score',
     description: 'How we built a national credit scoring system with a Gini of 0.85 from fragmented data sources.',
     buttonText: 'Read Case Study',
-    buttonLink: '#',
+    buttonLink: '/technical-portfolio',
   },
   {
     id: 'challenger-model',
@@ -25,7 +25,7 @@ const FEATURED_RESOURCES = [
     title: 'Event-sourcing for risk decisions',
     description: 'Architectural patterns for real-time decisioning with full auditability.',
     buttonText: 'View Technical Brief',
-    buttonLink: '#',
+    buttonLink: '/insights',
   },
 ];
 

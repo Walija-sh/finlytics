@@ -97,9 +97,10 @@ body {
    .p2,.p2v2 {
     font-size: max(0.5px, 0.0426667 * (100vw - 0px));
   }
-    .p3 {
+    .p3,.p3v2 {
     font-size: max(0.5px, 0.0426667 * (100vw - 0px)) !important;
   }
+
     .p4 {
     font-size: max(0.5px, 0.0461538 * (100vw - 0px));
   }
@@ -131,7 +132,7 @@ body {
     font-size: max(0.5px, 0.0410256 * (100vw - 17px));
   }
   .span5{
-    font-size: max(0.5px, 0.0358974  * (100vw - 0px));
+    font-size: max(0.5px, 0.0358974 * (100vw - 0px));
   }
   .span6 {
     
@@ -185,7 +186,7 @@ body {
    .p2 ,.p2v2{
     font-size: max(0.5px, 0.0212483 * (100vw - 0px));
   }
-   .p3 {
+   .p3,.p3v2 {
     font-size: max(0.5px, 0.0239044 * (100vw - 0px)) !important;
   }
     .p4 {
@@ -216,7 +217,7 @@ body {
     font-size: max(0.5px, 0.0234375 * (100vw - 17px));
   }
     .span5{
-    font-size: max(0.5px, 0.0208333   * (100vw - 0px));
+    font-size: max(0.5px, 0.0208333 * (100vw - 0px));
   }
    .span6 {
         font-size: 15px !important;
@@ -237,7 +238,7 @@ body {
     font-size: max(0px, min(500px, max(0.5px, 0.0158103 * (100vw - 0px))));
   }
     .heading4 {
-    font-size: max(0.5px, calc(0.0195313  * (100vw - 0px)));
+    font-size: max(0.5px, calc(0.0195313 * (100vw - 0px)));
   }
    .heading5 {
         font-size: max(0.5px, 0.0237154 * (100vw - 17px));
@@ -255,7 +256,7 @@ body {
    .p2,.p2v2 {
     font-size: max(0.5px, 0.0142292 * (100vw - 0px));
   }
-   .p3 {
+   .p3,.p3v2 {
     font-size: max(0.5px, 0.015625 * (100vw - 0px)) !important;
   }
    .p4 {
@@ -283,10 +284,10 @@ body {
     font-size: max(0.5px, 0.0140625 * (100vw - 0px));
   }
    .span4{
-    font-size: max(0.5px, 0.0140625  * (100vw - 17px));
+    font-size: max(0.5px, 0.0140625 * (100vw - 17px));
   }
    .span5{
-    font-size: max(0.5px, 0.0125   * (100vw - 0px));
+    font-size: max(0.5px, 0.0125 * (100vw - 0px));
   }
     .span6 {
         font-size: min(17px, max(0.5px, 0.0134387 * (100vw - 17px))) !important;
@@ -301,7 +302,7 @@ body {
     font-size: max(0.5px, 0.0131096 * (100vw - 0px));
   }
   .heading4 {
-    font-size: max(0.5px, calc(0.0102102  * (100vw - 0px)));
+    font-size: max(0.5px, calc(0.0182102 * (100vw - 0px)));
   }
   .heading5 {
         font-size: max(0.5px, 0.0182102 * (100vw - 17px));
@@ -323,6 +324,9 @@ body {
      .p2v2 {
     font-size: max(0.5px, 0.0104877 * (100vw - 0px));
   }
+     .p3v2 {
+    font-size: max(0.5px, 0.0104058 * (100vw - 0px)) !important;
+  }
       .p4 {
     font-size: max(0.5px, 0.015625 * (100vw - 0px));
   }
@@ -333,7 +337,6 @@ body {
     font-size: max(0.5px, 0.0104058 * (100vw - 0px)) !important;
   }
 
-  
    .p7 {
     font-size: max(0.5px, calc(0.0130073 * (100vw - 17px)));
   }
@@ -347,13 +350,13 @@ body {
     font-size: max(0.5px, 0.0131096 * (100vw - 0px));
   }
       .span3 {
-    font-size: max(0.5px, 0.0093652 * (100vw - 0px));
+    font-size: max(0.5px, 0.0130073 * (100vw - 0px));
   }
    .span4{
-    font-size: max(0.5px, 0.0104058  * (100vw - 17px));
+    font-size: max(0.5px, 0.0104058 * (100vw - 17px));
   }
    .span5{
-    font-size: max(0.5px, 0.0093652  * (100vw - 0px));
+    font-size: max(0.5px, 0.0093652 * (100vw - 0px));
   }
    .span6 {
         font-size: min(20px, max(0.5px, 0.0104877 * (100vw - 17px))) !important;
@@ -398,6 +401,7 @@ body {
     transform: translateX(10px);
   }
 }
+
 
 .animate-slide-left-right {
   animation: slideLeftRight 3s ease-in-out infinite;

@@ -122,7 +122,7 @@ function FaqItem({ item, isOpen, onToggle, index }) {
 function LinkCard({ item, index }) {
   return (
       <Link href={item.link} className="flex items-center justify-between md:justify-start gap-[10px] border-b border-white p-2 w-full max-w-[365px] group">
-        <span className="text-white text-[14px] md:text-[16px] font-medium lg:text-center">
+        <span className="text-white text-[14px] md:text-[16px] 2xl:text-[18px] font-medium lg:text-center">
           {item.title}
         </span>
         <div

@@ -38,8 +38,8 @@ description=' We go beyond just technology implementation. We partner with you t
 cardsData={platformbuildCards}
 />
 <Delivery
-title='How we deliver production-ready AI'
-subtitle='Our agile, phased approach ensures we prove value quickly and build solutions that are ready for the complexities of a live production environment.'
+title='How we deliver value, faster'
+subtitle='Our phased approach is designed to deliver tangible results in weeks, not years, building momentum and ensuring the final solution is perfectly aligned with your business needs.'
 cardsData={platformDelivery}
 />
 <Returns

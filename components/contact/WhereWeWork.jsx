@@ -31,7 +31,7 @@ export default function WhereWeWork() {
             </div>
             <div className="flex flex-col ">
               
-              <p className="text-[13.6553px] md:text-[18px] lg:text-[14.4px] xl:text-[20.25px] text-white">
+              <p className="text-[13.6553px] md:text-[18px] lg:text-[14.4px] xl:text-[20.25px] 2xl:text-[26px] text-white">
                We operate a remote-first model, allowing us to serve clients globally. Our primary hubs are in Australia (for APAC) and KSA (for MENA), but we have successfully delivered projects globally.
               </p>
               <br />

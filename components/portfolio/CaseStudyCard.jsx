@@ -9,6 +9,31 @@ import { Navigation } from 'swiper/modules';
 
 const CaseStudyCard = ({ data }) => {
   const swiperRef = useRef(null);
+const handleNext = () => {
+  const swiper = swiperRef.current;
+  if (!swiper) return;
+
+  const lastIndex = swiper.slides.length - 1;
+
+  if (swiper.activeIndex === lastIndex) {
+    swiper.slideTo(0);
+  } else {
+    swiper.slideNext();
+  }
+};
+
+const handlePrev = () => {
+  const swiper = swiperRef.current;
+  if (!swiper) return;
+
+  const lastIndex = swiper.slides.length - 1;
+
+  if (swiper.activeIndex === 0) {
+    swiper.slideTo(lastIndex);
+  } else {
+    swiper.slidePrev();
+  }
+};
 
   return (
     <div className="border border-white rounded-[13px] caseStudy-bg grid lg:grid-cols-[35%_5%_60%] lg:sticky top-[100px] lg:rounded-[5px]">
@@ -30,7 +55,7 @@ const CaseStudyCard = ({ data }) => {
           src={data.icon} 
           className='w-[7.725759837828213%] lg:w-[12.04601819442081%]  mb-4 h-auto object-contain lg:mb-[calc(max(0.5px,0.0951361*(100vw_-_17px))))]'
         />
-        <h4 className='heading4 font-bold text-blue-bg mb-2'>
+        <h4 className='heading4 2xl:max-w-[77.11280647613626%] font-bold text-blue-bg mb-2'>
           {data.title}
         </h4>
        {data.subtitle && <p className='p7'>{data.subtitle}</p>}
@@ -52,20 +77,21 @@ const CaseStudyCard = ({ data }) => {
       ">
         {/* nav icons */}
         <div className="flex gap-2 items-center absolute top-[calc(max(0.5px,0.0416667*(100vw_-_17px))))] left-[calc(max(0.5px,0.0416667*(100vw_-_17px))))] lg:bottom-[calc(max(0.5px,0.0416237*(100vw_-_17px))))] lg:left-[calc(max(0.5px,0.0208112*(100vw_-_17px))))] lg:items-end z-20">
-          <FaChevronCircleLeft className={`custom-prev-${data.id} text-secondary text-[25px] cursor-pointer`}/>
-          <FaChevronCircleRight className={`custom-next-${data.id} text-secondary text-[25px] cursor-pointer`}/>
+          <FaChevronCircleLeft  onClick={handlePrev} className={`custom-prev-${data.id} text-secondary text-[25px] cursor-pointer`}/>
+          <FaChevronCircleRight  onClick={handleNext} className={`custom-next-${data.id} text-secondary text-[25px] cursor-pointer`}/>
         </div>
         
         {/* slider */}
         <div className="mt-[calc(max(0.5px,0.1025641*(100vw_-_17px))))] lg:mt-0 w-full overflow-hidden grid">
           <Swiper 
             ref={swiperRef} 
-            navigation={true} 
-            modules={[Navigation]}
-            navigation={{
-              prevEl: `.custom-prev-${data.id}`,
-              nextEl: `.custom-next-${data.id}`,
-            }}
+             speed={800}
+            // navigation={true} 
+            // modules={[Navigation]}
+            // navigation={{
+            //   prevEl: `.custom-prev-${data.id}`,
+            //   nextEl: `.custom-next-${data.id}`,
+            // }}
             onSwiper={(swiper) => {
               swiperRef.current = swiper;
             }}
@@ -77,7 +103,7 @@ const CaseStudyCard = ({ data }) => {
                 {slide.type === 'challenge' && (
                   <div className="grid lg:grid-cols-2 lg:gap-5 xl:gap-[60px] lg:items-start">
                     <div className="">
-                      <h3 className='mb-2 lg:mb-[11px] heading4 font-bold uppercase'>{slide.title}</h3>
+                      <h3 className='mb-2 lg:mb-[11px] heading3  font-bold uppercase'>{slide.title}</h3>
                       <p className='mb-[15px] p3'>{slide.description}</p>
                     </div>
                     <Image 

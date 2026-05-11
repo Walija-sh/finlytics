@@ -23,7 +23,7 @@ const SubPageHero = ({
   return (
     <section 
       ref={sectionRef}
-      className={`relative min-h-[90vh] bg-primary overflow-hidden flex items-end p-[10%] md:py-[7.8125%] lg:pt-[10%] lg:pb-[5%] ${className}`}
+      className={`relative min-h-[90vh] 2xl:min-h-screen bg-primary overflow-hidden flex items-end p-[10%] md:py-[7.8125%] lg:pt-[10%] lg:pb-[5%] ${className}`}
     >
       
       <div className="absolute inset-0 z-0 overflow-hidden">

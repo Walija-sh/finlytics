@@ -180,33 +180,33 @@ export const platformDelivery = [
     number: 1,
     icon: "/assets/1.png",
     weeks: "Weeks 1-2",
-    title: "Discovery and data foundation",
-    description: "We start by analysing your current decisioning processes, identifying high-impact opportunities, and defining clear success metrics. We then build the foundational data and feature pipelines required for robust modelling.",
-    deliverable: "Use case definition with success metrics and feature engineering pipeline."
+    title: "Discovery and roadmap",
+    description: "We start by mapping your current data landscape and identifying your most critical decision-making challenges. We deliver a quick win—often a single, crucial dashboard—to prove value immediately.",
+    deliverable: "Prioritised 90-day roadmap and production-ready quick-win dashboard."
   },
   {
     number: 2,
     icon: "/assets/2.png",
     weeks: "Weeks 3-6",
-    title: "Model development and validation",
-    description: "We train and rigorously validate multiple algorithms, integrating business rules and ensuring all regulatory and fairness requirements are met. For GenAI, this includes implementing strict safety and testing protocols.",
-    deliverable: "Validated models with explainability framework and regulatory documentation."
+    title: "Core platform build",
+    description: "We establish the core infrastructure for your data warehouse, build the initial ETL/ELT pipelines for your most critical data sources, and develop the semantic layer that will power your analytics.",
+    deliverable: "Production data warehouse with governed pipelines for critical data sources."
   },
   {
     number: 3,
     icon: "/assets/3.png",
     weeks: "Weeks 7-8",
-    title: "Production deployment and integration",
-    description: "We deploy the validated model as a scalable API, integrate it with your existing systems, and establish a comprehensive monitoring framework. This is where MLOps best practices become critical.",
-    deliverable: "Production-grade ML system with monitoring, alerting, and rollback capabilities."
+    title: "Production deployment",
+    description: "We deploy the core platform to your production environment, deliver comprehensive training to your teams, and establish the data governance operating model.",
+    deliverable: "Operational platform with trained users and governance framework."
   },
   {
     number: 4,
     icon: "/assets/4.png",
     weeks: "Ongoing",
-    title: "Optimisation and continuous learning",
-    description: "Once live, we continuously monitor for performance degradation and concept drift, using A/B testing and challenger frameworks to ensure the solution delivers ongoing value.",
-    deliverable: "Optimised models with continuous improvement and knowledge transfer."
+    title: "Scale and optimisation",
+    description: "We work with you to integrate additional data sources, expand self-service capabilities, and continuously optimise the platform for performance and cost-efficiency.",
+    deliverable: "Expanded platform with continuous improvement and knowledge transfer."
   }
 ];
 

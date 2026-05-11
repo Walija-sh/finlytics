@@ -65,7 +65,7 @@ export default function OurFootprint() {
             </div>
             <div className="flex flex-col gap-[7px]">
               <SectionLabel>Primary Hubs</SectionLabel>
-              <p className="text-[13.6553px] md:text-[18px] lg:text-[14.4px] xl:text-[20.25px] text-white">
+              <p className="p2v2 text-white">
                 Australia (APAC)
                 <br />
                 KSA (MENA)

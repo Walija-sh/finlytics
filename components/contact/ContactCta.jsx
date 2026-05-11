@@ -87,7 +87,7 @@ const ContactCta = () => {
               <ContactCard key={card.id} card={card} index={index} />
             ))}
                 </div>
-                <Button variant='primary' href='#' className='w-full lg:py-[9px]'>
+                <Button external={true} variant='primary' href='https://calendar.app.google/bqWA2264BABWhw45A' className='w-full lg:py-[9px] 2xl:min-w-[50%] 2xl:w-fit'>
                     Schedule Your 30-Minute Call
                 </Button>
 

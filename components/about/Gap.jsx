@@ -76,10 +76,10 @@ export default function Gap({
         >
           {/* animated globes */}
           <motion.div className="w-[41.63872251726501%] lg:w-[22.504074265988276%] xl:w-[16.681442224520193%] aspect-square absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 " style={{ x: globeX1 }}>
-            <Image src='/assets/about/globe.avif' alt='Globes' width={100} height={100} className="w-full h-auto" />
+            <Image src='/assets/globe.avif' alt='Globes' width={100} height={100} className="w-full h-auto" />
           </motion.div>
           <motion.div className="w-[41.63872251726501%] lg:w-[22.504074265988276%] xl:w-[16.681442224520193%] aspect-square absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 " style={{ x: globeX2 }}>
-            <Image src='/assets/about/globe.avif' alt='Globes' width={100} height={100} className="w-full h-auto" />
+            <Image src='/assets/globe.avif' alt='Globes' width={100} height={100} className="w-full h-auto" />
           </motion.div>
           
           

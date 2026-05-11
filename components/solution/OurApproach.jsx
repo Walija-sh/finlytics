@@ -59,13 +59,13 @@ const cardProgresses = steps.map((_, i) => {
   const dividerWidth = useTransform(dividerProgress, [0, 0.3, 0.6], ["0%", "50%", "100%"]);
 
   return (
-    <section ref={sectionRef} className="bg-blue-2 p-[10%] flex items-center">
+    <section ref={sectionRef} className="bg-blue-2 p-[10%] md:py-[5%] flex items-center">
       <div className="w-full text-white">
         {/* Header */}
         <h2 className="heading2 font-bold lg:mb-[22px] lg:leading-[1]">
           Our approach
         </h2>
-        <p className="span4 mb-5 lg:mb-[30px]">
+        <p className="span2 mb-5 lg:mb-[30px] 2xl:mb-[54px]">
           Fast time-to-value
         </p>
 
@@ -119,7 +119,7 @@ const cardProgresses = steps.map((_, i) => {
           alt={`Step ${step.number}`}
           width={36}
           height={36}
-          className="object-contain w-[9.5%]"
+          className="object-contain w-[9.5%] 2xl:w-[7.805036687737555%]"
         />
       </motion.div>
     ))}
@@ -139,7 +139,7 @@ const cardProgresses = steps.map((_, i) => {
     ))}
   </div>
 
-  {/* Divider - same as before */}
+  {/* Divider */}
   <div ref={dividerRef} className="my-2 lg:my-[10px]">
     <motion.div 
       style={{ width: dividerWidth }}
@@ -155,7 +155,7 @@ const cardProgresses = steps.map((_, i) => {
         key={step.number}
         style={{ opacity: index === 0 ? 1 : cardProgresses[index] }}
         transition={{ duration: 0.5 }}
-        className="text-white span3 mr-[40px] xl:mr-[60px]"
+        className="text-white p2v2 max-w-[83.61198910170441%] lg:max-w-[67.78480352990125%]"
       >
         {step.description}
       </motion.p>

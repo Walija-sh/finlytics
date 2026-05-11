@@ -14,7 +14,7 @@ const CAPABILITIES = [
     title: "Credit Risk & Decision Intelligence",
     description: "From traditional scorecards to challenger models and IFRS 9 alignment, we bring risk expertise that's been tested at national scale.",
     buttonText: "Learn more about our Risk Solutions",
-    buttonLink: "#",
+    buttonLink: "/our-solutions/credit-risk-analytics",
     Icon: CreditRiskIcon,
   },
   {
@@ -22,7 +22,7 @@ const CAPABILITIES = [
     title: "Modern Data Platforms & Governance",
     description: "We build modern data stacks with dbt, event streaming, and feature stores, delivering Power BI and Metabase solutions that become primary decision-making tools. Designed for governance without sacrificing velocity.",
     buttonText: "Explore our Data Platform Solutions",
-    buttonLink: "#",
+    buttonLink: "/our-solutions/modern-data-platforms-governance",
     Icon: DataPlatformsIcon,
   },
   {
@@ -30,7 +30,7 @@ const CAPABILITIES = [
     title: "Production AI/ML & Machine Learning",
     description: "We manage the end-to-end AI/ML lifecycle, from experimentation to production monitoring. We implement classical ML and GenAI with the robust guardrails required for regulated enterprises.",
     buttonText: "Discover our AI/ML Services",
-    buttonLink: "#",
+    buttonLink: "/our-solutions/data-science-ml",
     Icon: ProduceAIMLIcon,
   },
 ];

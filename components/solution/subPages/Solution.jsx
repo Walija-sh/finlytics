@@ -28,7 +28,7 @@ const logoY = useTransform(scrollYProgress, [0, 0.4], [500, 0])
 
   return (
     <section  ref={sectionRef} className='solution-bg text-white p-[10%]   gap-[max(0.5px,0.0512827*(100vw-17px))] grid grid-rows-[2fr_1.4fr_1fr] md:grid-rows-[1.5fr_1fr] md:gap-0 md:grid-cols-[0.5000000000000001fr_0.49999999999999994fr] relative overflow-clip'>
-      <div className="relative flex items-center justify-center w-full h-full  md:row-span-2 md:col-start-2 md:row-start-1">
+      <div className="relative flex items-center justify-center  w-full h-full  md:row-span-2 md:col-start-2 md:row-start-1">
 
   {/* BIG */}
   <motion.div
@@ -101,7 +101,7 @@ const logoY = useTransform(scrollYProgress, [0, 0.4], [500, 0])
         <h2 className="mb-[max(0.5px,0.0104058*(100vw-17px))] font-bold">Our Solution</h2>
         <p>{title}</p>
     </motion.div>
-    <p className='md:pb-[max(0.5px,0.0312503*(100vw-17px))]   span4 md:col-start-1 md:row-start-2 mt-5 lg:mt-10 2xl:mt-20'>
+    <p className='md:pb-[max(0.5px,0.0312503*(100vw-17px))]   span4 md:col-start-1 md:row-start-2 mt-5 lg:mt-10 2xl:mt-24 lg:w-[83.77227783203125%] 2xl:w-[57.405445789244354%]'>
        {description}
     </p>
 

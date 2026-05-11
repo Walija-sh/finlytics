@@ -146,7 +146,7 @@ export const creditDecisioningData = {
     description: 'Credit scoring is evolving from static, periodic models to dynamic, real-time contextual decisions.'
   },
   optionalSubtext: 'Key trends we help clients implement include:',
-  optionalIconWidth:'w-[6.827122921615202%]',
+  optionalIconWidth:'6.827122921615202%',
   primary:true,
   cards: [
     {

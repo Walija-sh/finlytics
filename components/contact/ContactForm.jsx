@@ -116,7 +116,7 @@ const ContactForm = () => {
       
       {/* form inputs */}
       <div className="grid gap-5 leading-[1]">
-        <div className="gap-5 grid md:grid-cols-2  lg:gap-[32px] xl:gap-[40px] text-[16px] items-start md:text-[20px]">
+        <div className="gap-5 grid md:grid-cols-2  lg:gap-[32px] xl:gap-[40px] text-[16px] items-start md:text-[20px] 2xl:grid-cols-1">
           {/* First Name */}
           <div className="grid">
             <label htmlFor="firstName" className='mb-2'>
@@ -150,7 +150,7 @@ const ContactForm = () => {
           </div>
         </div>
         
-        <div className="grid gap-5 md:grid-cols-2 lg:gap-[32px] xl:gap-[40px] items-start text-[16px] md:text-[20px]">
+        <div className="grid gap-5 md:grid-cols-2 lg:gap-[32px] xl:gap-[40px] 2xl:grid-cols-1 items-start text-[16px] md:text-[20px]">
           {/* Email */}
           <div className="grid relative">
             <label htmlFor="email" className='mb-2'>
@@ -208,12 +208,12 @@ const ContactForm = () => {
           )}
         </div>
         
-        {/* Submit Button */}
+        
         {/* Submit Button */}
 <Button 
   type="submit" 
   variant='light' 
-  className='md:text-[20px] py-[11px] px-[6px] w-full md:w-[50%] cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center'
+  className='md:text-[20px] py-[11px] px-[6px] w-full md:w-[50%] 2xl:w-full cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center'
   disabled={isSubmitting}
 >
   {isSubmitting ? (

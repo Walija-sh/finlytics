@@ -38,17 +38,17 @@ const SOLUTIONS = [
   {
     id: "credit-risk",
     title: "Credit Risk & Financial Analytics",
-    link: "#",
+    link: "/our-solutions/credit-risk-analytics",
   },
   {
     id: "data-platforms",
     title: "Modern Data Platforms & Governance",
-    link: "#",
+    link: "/our-solutions/modern-data-platforms-governance",
   },
   {
     id: "data-science-ml",
     title: "Data Science & Machine Learning",
-    link: "#",
+    link: "/our-solutions/data-science-ml",
   },
 ];
 
@@ -104,20 +104,20 @@ function SolutionCard({ item, index }) {
       style={{ opacity }}
       className="  group cursor-pointer md:p-[20px] md:rounded-[13px] md:border md:border-white lg:p-0  lg:rounded-none lg:border-0 2xl:max-w-[455px]"
     >
-      <div className="flex items-center justify-between 2xl:justify-start gap-[10px] border-b border-white p-2">
+      <Link  href={item.link} className="flex items-center justify-between 2xl:justify-start gap-[10px] border-b border-white p-2">
         <span className="text-white text-[14px] md:text-[16px] 2xl:text-[18px] font-medium">
         {item.title}
       </span>
-      <Link
-        href={item.link}
+      <div
+       
         className="inline-flex items-center gap-2 text-white  transition-colors group-hover:gap-3"
       >
         <span className="rounded-full border border-secondary w-6 aspect-square flex items-center justify-center text-secondary relative overflow-hidden">
           <BsArrowRightShort className='text-[26px] -translate-y-[1px] -translate-x-[1px] group-hover:translate-x-full transition-all duration-300 group-hover:scale-50'/>
           <BsArrowRightCircleFill className='text-[26px] absolute inset-[-1px] text-secondary scale-0 group-hover:scale-100 transition-all origin-left duration-300'/>
         </span>
-      </Link>
       </div>
+      </Link>
     </motion.div>
   );
 }

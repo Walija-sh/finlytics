@@ -11,7 +11,7 @@ const BusinessCase = () => {
           className='gap-[max(0.5px,0.0130208*(100vw-17px))] lg:gap-[max(0.5px,0.015625*(100vw-17px))] md:order-2 md:ml-[max(0.5px,0.0440058*(100vw-0px))] lg:ml-[max(0.5px,0.0843687*(100vw-17px))]'
         />
         
-        <div className="relative w-full h-auto aspect-[1/1.2] border-white border overflow-hidden rounded-[13px] bg-primary md:order-1 md:aspect-[1/2.5] lg:aspect-[1/1.35] ">
+        <div className="relative w-full h-auto aspect-[1/1.2] border-white border overflow-hidden rounded-[13px] bg-primary md:order-1 md:aspect-[1/2.5] lg:aspect-[1/1.35] 2xl:aspect-[1/1.1] ">
           <div className="absolute inset-0 overflow-hidden rounded-[13px]">
             <div 
               className="absolute  bg-fixed bg-no-repeat bg-cover top-[-5%] bottom-[-5%] left-[-10%] right-[-10%] md:top-[-2.5%] md:bottom-[-2.5%]"

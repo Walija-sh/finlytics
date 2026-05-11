@@ -5,10 +5,10 @@ import { motion, useScroll, useTransform } from 'motion/react'
 
 const InsightCard = ({ 
   card, 
-  variant = 'default', // 'default', 'bordered', or custom
+  variant = 'default', 
   optionalIconWidth = null,
   textColor = false,
-  showIcon = true // Control whether to show icon
+  showIcon = true 
 }) => {
   const cardRef = useRef(null)
   
@@ -18,7 +18,8 @@ const InsightCard = ({
   })
   
   const opacity = useTransform(scrollYProgress, [0, 1], [0, 1])
-  const iconWidth = optionalIconWidth || 'w-[14.393048811653463%]'
+const iconWidth = optionalIconWidth ?? '14.393048811653463%';
+  
 
   const variantStyles = {
     default: {
@@ -48,7 +49,8 @@ const InsightCard = ({
           src={card.icon} 
           width={50} 
           height={50} 
-          className={`${iconWidth} mb-[10px]`}
+          style={{ width: iconWidth }}
+          className={` mb-[10px]`}
         />
       )}
       

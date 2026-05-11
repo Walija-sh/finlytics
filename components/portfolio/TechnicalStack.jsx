@@ -52,10 +52,10 @@ function StackCard({ item }) {
       style={{ opacity }}
       className="  flex flex-col  transition-all duration-700 ease-out"
     >
-      <div className="w-[11.524027937037424%] md:w-[6.354860948423824%] mb-2 lg:mb-[21px] h-auto">
-        <Image src={item.icon} alt={item.title} width={25} height={25} />
+      <div className="w-[11.524027937037424%] md:w-[6.354860948423824%] 2xl:w-[5%]  mb-2 lg:mb-[21px] h-auto ">
+        <Image src={item.icon} alt={item.title} width={25} height={25} className='w-full h-auto object-contain' />
       </div>
-      <h3 className="font-bold heading3 text-white lg:leading-[1] lg:mb-2">
+      <h3 className="font-bold heading3 text-white lg:leading-[1] lg:mb-2 2xl:mb-[14px]">
         {item.title}
       </h3>
       <p className="p2 text-white">
@@ -81,10 +81,10 @@ export default function TechnicalStack() {
 
       <div className="relative z-10 p-[10%] lg:py-[5%] flex flex-col gap-5 lg:gap-10 lg:grid lg:grid-cols-2 xl:gap-[43px]">
         {/* Header */}
-        <div className="flex flex-col gap-20 xl:gap-28 relative ">
+        <div className="flex flex-col gap-20 xl:gap-28 relative lg:grid 2xl:grid-rows-[1fr_3.45fr]  ">
 
-          <div className="flex flex-col lg:sticky lg:top-[150px] relative z-10">
-            <h2 className="font-bold heading2 text-white">
+          <div className="flex flex-col lg:sticky lg:top-[150px] relative z-10 xl:max-w-[71.66549298634357%]">
+            <h2 className="font-bold heading2 text-white ">
               Our technical stack
             </h2>
             <p className="p2 text-white">
@@ -102,7 +102,7 @@ export default function TechnicalStack() {
                  <Image src='/assets/RotatingCircles.svg' alt='circle' width={100} height={100} className='w-full h-full aspect-square'/>
               </motion.div>
               {/* logo mark */}
-              <div className="w-[64.03395565373863%] mb-[calc(max(0.5px,0.0283085 *(100vw-0px)))] absolute  left-0 bottom-0">
+              <div className="w-[62.03395565373863%] mb-[calc(max(0.5px,0.0283085 *(100vw-0px)))] absolute  left-0 bottom-0">
                 <LogoMark fill='#0c0054' />
               </div>
             
@@ -111,7 +111,7 @@ export default function TechnicalStack() {
         </div>
 
       
-        <div className="grid grid-cols-2 gap-4 lg:gap-[30px] lg:flex lg:flex-col ">
+        <div className="grid grid-cols-2 gap-4 lg:gap-[30px] 2xl:gap-[64px] lg:flex lg:flex-col ">
           {STACK.map((item) => (
             <StackCard key={item.id} item={item} />
           ))}

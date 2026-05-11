@@ -23,7 +23,7 @@ const BuildCard = ({
           ? 'w-[80%] md:w-[88%] lg:w-[43.997875354107656%]' 
           : 'w-[80%] md:w-[88%] lg:w-[80%]'
         }`}>
-    <h3 className={` mb-[max(0.5px,0.0441613*(100vw-17px))] md:mb-[max(0.5px,0.0232981*(100vw-17px))] lg: mb-[max(0.5px,0.011706*(100vw-17px))]  font-bold  text-[18px] lg:text-[20px] 2xl:text-[25px]`}>
+    <h3 className={` mb-[max(0.5px,0.0441613*(100vw-17px))] md:mb-[max(0.5px,0.0232981*(100vw-17px))] lg:mb-[max(0.5px,0.011706*(100vw-17px))]  font-bold  text-[18px] lg:text-[20px] 2xl:text-[25px]`}>
         {card.title}
       </h3>
       

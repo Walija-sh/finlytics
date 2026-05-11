@@ -6,7 +6,7 @@
       title: 'Modern Data Platforms & Governance',
       description: 'We build the trusted data foundations that enable our clients to move faster, make smarter decisions, and unlock new opportunities.',
       buttonText: 'Explore our Data Platform Solutions',
-      buttonLink: '#'
+      buttonLink: '/our-solutions/modern-data-platforms-governance'
     },
     caseStudies: [
       {
