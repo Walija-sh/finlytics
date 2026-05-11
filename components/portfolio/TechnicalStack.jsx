@@ -83,7 +83,7 @@ export default function TechnicalStack() {
         {/* Header */}
         <div className="flex flex-col gap-20 xl:gap-28 relative lg:grid 2xl:grid-rows-[1fr_3.45fr]  ">
 
-          <div className="flex flex-col lg:sticky lg:top-[150px] relative z-10 xl:max-w-[71.66549298634357%]">
+          <div className="flex flex-col lg:sticky lg:top-[150px] 2xl:top-[250px] relative z-10 xl:max-w-[71.66549298634357%]">
             <h2 className="font-bold heading2 text-white ">
               Our technical stack
             </h2>

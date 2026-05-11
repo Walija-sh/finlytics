@@ -38,6 +38,7 @@ const page = () => {
       title = "From data chaos to decision clarity"
   subtitle = "We deliver focused solutions that bridge the gap between deep domain expertise and cutting-edge technical innovation. Our engagements are designed to deliver tangible value in weeks, not years, by focusing on the capabilities that matter most to your business."
   bgImage = "/assets/solutions/solutionsHero.jpg"
+  className='min-h-[410px] md:min-h-[491px] lg:min-h-[316px] xl:min-h-[446px] 2xl:min-h-[40vh]'
       />
 
 <Solutions/>

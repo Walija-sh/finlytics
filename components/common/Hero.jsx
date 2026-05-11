@@ -22,7 +22,7 @@ export default function Hero({
   return (
     <section 
       ref={sectionRef}
-      className={`relative  min-h-[392px] md:min-h-[491px] lg:min-h-[316px] xl:min-h-[446px] 2xl:min-h-[40vh] bg-primary overflow-hidden flex items-end p-[10%] md:py-[5%] ${className}`}
+      className={`relative  min-h-[328px] md:min-h-[491px] lg:min-h-[316px] xl:min-h-[446px] 2xl:min-h-[40vh] bg-primary overflow-hidden flex items-end p-[10%] md:py-[5%] ${className}`}
     >
     <div className="absolute inset-0 z-1 overflow-hidden">
         <motion.div

@@ -22,7 +22,7 @@ const opacity = useTransform(scrollYProgress, [0, 1], [0.2, 1]);
       
       ref={ref}
   style={{ opacity }}
-      className="rounded-[13px] border border-white text-white  bg-primary/30 p-4 lg:p-10 xl:py-11 xl:px-11.5 2xl:p-[80px] flex flex-col  transition-all duration-700 ease-out"
+      className="rounded-[13px] border border-white text-white  bg-primary/30 p-4 lg:p-10 xl:py-11 xl:px-11.5 2xl:p-[max(0.5px,0.03125*(100vw-17px))] flex flex-col  transition-all duration-700 ease-out"
      
     >
       {/* Icon */}
@@ -78,7 +78,7 @@ export default function Differences({DIFFERENTIATORS}) {
     repeat: Infinity,
     ease: "easeInOut",
   }}
-                className="hidden lg:inline-block w-[100px] xl:w-[123px] scale-y-[-1] fill-secondary self-end ">
+                className="hidden lg:inline-block w-[100px] xl:w-[123px]  2xl:w-[34.74884437596302%] scale-y-[-1] fill-secondary self-end ">
             <HomeArrowSvg/>
             </motion.div>
             </div>

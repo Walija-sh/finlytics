@@ -43,7 +43,7 @@ function ResourceCard({ item, index }) {
     <motion.div
       ref={ref}
       style={{ opacity }}
-      className="rounded-[13px] border border-white bg-primary p-4 xl:p-5.5 xl:py-10.5 2xl:pt-[80px]  flex flex-col  transition-all duration-700 ease-out lg:grid lg:grid-rows-[auto_auto_auto]  " >
+      className="rounded-[13px] border border-white bg-primary p-4 xl:p-5.5 xl:py-10.5 2xl:p-[max(0.5px,0.0156249*(100vw-17px))]  2xl:pt-[max(0.5px,0.0312503*(100vw-17px))]  flex flex-col  transition-all duration-700 ease-out lg:grid lg:grid-rows-[auto_auto_auto]  " >
       <h3 className="font-bold heading3 2xl:text-[40px]! text-white mb-2 xl:mb-[19px]">
         {item.title}
       </h3>

@@ -122,9 +122,9 @@ const handlePrev = () => {
                       <h3 className='mb-2 lg:mb-[11px] heading4 font-bold uppercase'>{slide.title}</h3>
                       <p className='mb-[15px] p3'>{slide.description}</p>
                     </div>
-                    <div className="grid gap-2 span5 text-primary">
+                    <div className="grid gap-[max(0.5px,0.00625*(100vw-0px))] span5 text-primary">
                       {slide.solutionItems.map((item, idx) => (
-                        <div key={idx} className="rounded-[13px] bg-blue-bg p-[12px] md:p-5 lg:p-[11px] xl:p-[14px]">
+                        <div key={idx} className="rounded-[5.4px] bg-blue-bg p-[max(0.5px,0.0260417*(100vw-0px))] md:p-5 lg:p-[11px] xl:p-[14px]">
                           <p><span className='font-bold'>{item.label}:</span> {item.text}</p>
                         </div>
                       ))}

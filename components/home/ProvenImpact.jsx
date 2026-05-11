@@ -5,7 +5,7 @@ import { EnterpriseWarehouseIcon, OnChainOffChainIcon, GenAIWorkflowsIcon, Event
 function ImpactCard({ children, className = "" }) {
   return (
     <div
-      className={`rounded-2xl h-full border text-primary bg-blue-bg  p-4 flex flex-col justify-center   xl:min-h-[154px]  xl:p-[22px] 2xl:p-10  ${className}`}
+      className={`rounded-2xl h-full border text-primary bg-blue-bg  p-4 flex flex-col justify-center   xl:min-h-[154px]  xl:p-[22px] 2xl:p-[max(0.5px,0.0156249*(100vw-17px))]  ${className}`}
     >
       {children}
     </div>
@@ -18,10 +18,10 @@ function StatCard({ stat, label, description, className = "" }) {
       <p className=" font-extrabold font-[arial] text-[25px] 2xl:text-[30px] leading-none tracking-tight text-blue-2">
         {stat}
       </p>
-      <p className="font-bold  text-[13px] md:text-[18px] 2xl:text-[20px] uppercase leading-tight">
+      <p className="font-bold  text-[13px] md:text-[18px] 2xl:text-[20px] uppercase leading-[1]">
         {label}
       </p>
-      <p className=" text-[14px] md:text-[16px] leading-tight">
+      <p className=" text-[14px] md:text-[16px] leading-[1]">
         {description}
       </p>
     </ImpactCard>
@@ -35,10 +35,10 @@ function IconCard({ icon: Icon, label, description, direction="col", className =
         <Icon className="w-full h-full" />
       </div>
       <div className="flex flex-col gap-2">
-        <p className={` font-bold  text-[13px] 2xl:text-[20px] ${direction==='col' ? 'md:text-[18px]' : ' md:text-[20px]'} uppercase leading-tight`}>
+        <p className={` font-bold  text-[13px] 2xl:text-[20px] ${direction==='col' ? 'md:text-[18px]' : ' md:text-[20px]'} uppercase leading-[1] `}>
           {label}
         </p>
-        <p className="  text-[14px] md:text-[16px] leading-tight">
+        <p className="  text-[14px] md:text-[16px] leading-[1]">
           {description}
         </p>
       </div>

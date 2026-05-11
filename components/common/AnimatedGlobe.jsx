@@ -1,15 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+
 import { useRef, useState, useEffect } from "react";
 import { motion } from "motion/react";
 
 const AnimatedGlobe = ({ 
   className = "", 
   imageSrc = "/assets/globe.avif",
-  logoHref = "/",
-  logoSrc = "/assets/Logo.png",
   perspective = 580,
   maxTiltX = 12,  
   maxTiltY = 12,  
@@ -23,7 +21,6 @@ const AnimatedGlobe = ({
   const handleMouseMove = (e) => {
     if (!globeRef.current) return;
     
-    // Get center of the screen instead of globe element
     const centerX = window.innerWidth / 2;
     const centerY = window.innerHeight / 2;
 
@@ -45,7 +42,6 @@ const AnimatedGlobe = ({
     setRotateY(0);
   };
 
-  // Add event listener to window for mouse movement
   useEffect(() => {
     window.addEventListener('mousemove', handleMouseMove);
     window.addEventListener('mouseleave', handleMouseLeave);
@@ -54,10 +50,10 @@ const AnimatedGlobe = ({
       window.removeEventListener('mousemove', handleMouseMove);
       window.removeEventListener('mouseleave', handleMouseLeave);
     };
-  }, []); // Empty dependency array means this runs once on mount
+  }, []);
 
   return (
-    <div className={`flex items-center relative ${className}`}>
+    <div className={`flex items-center relative w-full ${className}`}>
       <motion.div 
         ref={globeRef}
         className="w-full h-full aspect-square relative"
@@ -90,20 +86,7 @@ const AnimatedGlobe = ({
         </motion.div>
       </motion.div>
       
-      {logoHref && logoSrc && (
-        <Link 
-          href={logoHref} 
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[45%]"
-        >
-          <Image
-            src={logoSrc}
-            alt="FinlyticsHub Logo"
-            width={240}
-            height={96}
-            className="w-full h-auto object-contain"
-          />
-        </Link>
-      )}
+    
     </div>
   );
 };

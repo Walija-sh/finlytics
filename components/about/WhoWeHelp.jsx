@@ -67,7 +67,7 @@ function IndustryCard({ icon, title, desc }) {
 function RoleCard({ title }) {
   return (
     <Card className=" flex items-center  text-blue-2 lg:px-[44px]">
-      <p className="font-semibold text-[13.6553px] md:text-[18px] lg:text-[14.4px] xl:text-[20.25px] 2xl:text-[24px]">
+      <p className="font-semibold text-[13.6553px] md:text-[18px] lg:text-[14.4px] xl:text-[20.25px] 2xl:text-[24px] text-blue-2">
         {title}
       </p>
     </Card>

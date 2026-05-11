@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import AnimatedGlobe from "../common/AnimatedGlobe"; 
+import Link from "next/link";
 
 
 
@@ -43,18 +44,30 @@ export default function WhereWeWork() {
          </div>
          
         
-         {/* Animated Globe */}
-        <AnimatedGlobe 
-          className="w-full mx-auto md:w-[89.67026226647717%] lg:w-[83.33141640328931%]"
-          imageSrc="/assets/globe.avif"
-          logoHref="/"
-          logoSrc="/assets/Logo.png"
+       
+           {/* Animated Globe */}
+         <div className="relative flex items-center justify-center w-full">
+            <AnimatedGlobe 
+         className="w-full md:w-[89.67026226647717%] lg:w-[83.33141640328931%]"
           perspective={580}
           maxTiltX={16}
           maxTiltY={12}
           transitionDuration={0.5}
           transitionEase="easeOut"
         />
+          <Link 
+          href='/'
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[52.36654721389747%] md:w-[65.2410288326101%] lg:w-[51.20458449773063%]"
+        >
+          <Image
+            src='/assets/Logo.png'
+            alt="FinlyticsHub Logo"
+            width={240}
+            height={96}
+            className="w-full h-auto object-contain"
+          />
+        </Link>
+         </div>
        
       </div>
     </section>

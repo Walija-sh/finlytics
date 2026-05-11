@@ -50,7 +50,7 @@ const secondRowProgress = useTransform(cardsScrollProgress, [0.2, 0.7], [0, 1]);
   return (
     
     <section    className={`p-[10%] lg:py-[5%]  ${bgColor} text-white grid lg:grid-cols-2 gap-5 md:gap-8 lg:gap-10 xl:gap-[87px] 2xl:gap-[6.250052029136317%]`}>
-        <div className="w-full h-full max-h-[236px] md:max-h-[198px] lg:max-h-none rounded-[13px] overflow-hidden lg:order-2">
+        <div className="w-full h-full aspect-square md:aspect-auto  md:max-h-[198px] lg:max-h-none rounded-[13px] overflow-hidden lg:order-2">
             <Image src={imageSrc} alt={imageAlt} width={462} height={305} className='w-full h-full object-cover object-center' />
         </div>
         {/* content */}
@@ -61,7 +61,6 @@ const secondRowProgress = useTransform(cardsScrollProgress, [0.2, 0.7], [0, 1]);
   2xl:text-[max(0px,min(500px,max(0.5px,0.0182102*(100vw-17px))))] font-bold lg:mb-[18px] lg:leading-[1]'>
 {title}</h2>
 <p className="text-secondary font-bold span4 lg:mb-[34px]">{subtitle}</p>
-<p>&nbsp;</p>
 <p className='span4 lg:mb-[15px] 2xl:mb-[30px]'>{description}</p>
 <p className='span4 lg:mb-[7px] 2xl:mb-[16px]'>Key capabilities:</p>
 {/* cards */}

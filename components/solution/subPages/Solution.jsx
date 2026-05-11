@@ -95,12 +95,20 @@ const logoY = useTransform(scrollYProgress, [0, 0.4], [500, 0])
 
 </div>
 {/* content */}
-    <motion.div
+    <div
     
-    className="sticky top-[50%]     heading2 leading-[1] md:col-start-1 md:row-start-1 md:row-span-1">
-        <h2 className="mb-[max(0.5px,0.0104058*(100vw-17px))] font-bold">Our Solution</h2>
-        <p>{title}</p>
-    </motion.div>
+    className="sticky top-[50%] hero-h md:hidden  leading-[1] md:col-start-1 md:row-start-1 md:row-span-1">
+        <h2 className="mb-[max(0.5px,0.0104058*(100vw-17px))] font-bold ">Our Solution</h2>
+      
+        <p className='font-bold'>{title}</p>
+    </div>
+    <div
+    
+    className="sticky top-[50%] heading2 hidden md:inline-block  leading-[1] md:col-start-1 md:row-start-1 md:row-span-1">
+        <h2 className="mb-[max(0.5px,0.0104058*(100vw-17px))] font-bold ">Our Solution</h2>
+      
+        <p className=''>{title}</p>
+    </div>
     <p className='md:pb-[max(0.5px,0.0312503*(100vw-17px))]   span4 md:col-start-1 md:row-start-2 mt-5 lg:mt-10 2xl:mt-24 lg:w-[83.77227783203125%] 2xl:w-[57.405445789244354%]'>
        {description}
     </p>

@@ -66,7 +66,7 @@ export default function CTA({
       <div className={`absolute inset-0 z-0 bg-primary ${overlayOpacity} pointer-events-none`} />
 
       <div className="relative z-10 p-[10%] xl:pt-[5%]">
-        <div className="border 2xl:border-2 border-white p-5 md:p-8 lg:p-10 xl:p-14.5 2xl:p-[107px] bg-primary/30 backdrop-blur-[20px] rounded-lg 2xl:rounded-[26px]">
+        <div className="border 2xl:border-2 border-white p-5 md:p-8 lg:p-10 xl:p-14.5 2xl:p-[max(0.5px,0.0419507*(100vw-0px))] bg-primary/30 backdrop-blur-[20px] rounded-lg 2xl:rounded-[26px]">
           <div className="flex flex-col items-center text-center md:w-[73.046875%] mx-auto">
             {/* Heading */}
             <h2 className="font-bold heading2v2  md:leading-[1]  text-white mb-2.5 ">

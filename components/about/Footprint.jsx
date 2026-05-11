@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import AnimatedGlobe from "../common/AnimatedGlobe"; 
+import Link from 'next/link'
 
 function SectionLabel({ children }) {
   return (
@@ -31,17 +32,29 @@ export default function OurFootprint() {
       <div className="grid grid-cols-1 md:grid-cols-[0.39998917765794867fr_0.6000108223420513fr] gap-[max(0.5px,0.0209744*(100vw-17px))] md:gap-[max(0.5px,0.0052438*(100vw-17px))] items-center">
         
          {/* Animated Globe */}
-        <AnimatedGlobe 
-          className="w-[63.834635416666664%] md:w-[89.67026226647717%] lg:w-[83.33673556915899%] mx-auto"
-          imageSrc="/assets/globe.avif"
-          logoHref="/"
-          logoSrc="/assets/Logo.png"
+         <div className="relative lg:flex items-center justify-center w-full">
+            <AnimatedGlobe 
+         className=" w-[63.834635416666664%] md:w-[89.67026226647717%] "
           perspective={580}
           maxTiltX={16}
           maxTiltY={12}
           transitionDuration={0.5}
           transitionEase="easeOut"
         />
+          <Link 
+          href='/'
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[69.61119088160545%] md:w-[65.2410288326101%] lg:w-[51.20458449773063%]"
+        >
+          <Image
+            src='/assets/Logo.png'
+            alt="FinlyticsHub Logo"
+            width={240}
+            height={96}
+            className="w-full h-auto object-contain"
+          />
+        </Link>
+         </div>
+      
         {/* Info items */}
         <div className="flex flex-col gap-[max(0.5px,0.031463*(100vw-17px))] lg:w-[79.33021934459435%]">
           {/* Global Reach */}
