@@ -83,7 +83,7 @@ useEffect(() => {
       <AnimatePresence>
         {open && (
           <motion.aside
-            className="fixed top-0 right-0 w-[90%] max-w-[393px] lg:max-w-[409px] 2xl:max-w-[35%] h-full z-60 p-5 lg:p-10 text-white flex flex-col border-l border-secondary bg-linear-to-r from-blue-2 to-blue-2-grad"
+            className="fixed top-0 right-0 w-[90%] md:w-[50%] lg:w-[35%] h-full z-60 p-5 md:p-10 text-white flex flex-col border-l border-secondary bg-linear-to-r from-blue-2 to-blue-2-grad"
             variants={sidebarVariants}
             initial="hidden"
             animate="visible"
@@ -147,7 +147,7 @@ useEffect(() => {
               ))}
             </nav>
             {/* logomark */}
-           <div className="absolute bottom-[20px] right-[20px] lg:bottom-[40px] lg:right-[40px] w-[50%] 2xl:w-[35.46467044795408%] opacity-[0.14]">
+           <div className="absolute bottom-[20px] right-[20px] md:bottom-[40px] md:right-[40px] w-[47.5%] md:w-[44.5%] lg:w-[27.5%] xl:w-[30%] opacity-[0.14]">
   <LogoMark />
 </div>
         

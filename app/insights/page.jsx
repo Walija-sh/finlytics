@@ -53,7 +53,7 @@ const page = () => {
     {
       id: "data-science-and-ml",
       title: "Data Science & Machine Learning",
-      link: "/data-science-ml" 
+      link: "/our-solutions/data-science-ml" 
     }
   ]}
 />

@@ -147,7 +147,7 @@ const Solutions = () => {
         "Your teams require real-time visibility into operational performance."
       ],
       linkText: "Learn more about our Data Platform solutions",
-      linkHref: "/data-platform"
+      linkHref: "/our-solutions/modern-data-platforms-governance"
     },
     {
       bgColor: "bg-blue-2",
@@ -168,7 +168,7 @@ const Solutions = () => {
         "You want to reduce decision times from days to seconds."
       ],
       linkText: "Learn more about our Credit Risk solutions",
-      linkHref: "/credit-risk"
+      linkHref: "/our-solutions/credit-risk-analytics"
     },
     {
       bgColor: "bg-primary",
@@ -189,7 +189,7 @@ const Solutions = () => {
         "You want to automate complex processes that go beyond simple RPA."
       ],
       linkText: "Learn more about our DS & ML solutions",
-      linkHref: "/data-science"
+      linkHref: "/our-solutions/data-science-ml"
     }
   ];
 
