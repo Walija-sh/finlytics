@@ -54,7 +54,7 @@ const SubPageHero = ({
       
       {/* Content Card */}
       <div 
-        className="border border-white/50 rounded-[13px] p-10 lg:p-[60px] text-white relative z-10 backdrop-blur-[20px] lg:w-[55.991363525390625%] 2xl:w-[42.32014294912234%]"
+        className="border border-white/50 mt-[60px] rounded-[13px] p-10 lg:p-[60px] text-white relative z-10 backdrop-blur-[20px] lg:w-[55.991363525390625%] 2xl:w-[42.32014294912234%]"
 
       >
         <h1 className="mb-[9.984375px] hero-h font-bold leading-[1] capitalize">
